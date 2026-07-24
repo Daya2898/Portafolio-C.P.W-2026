@@ -170,7 +170,7 @@ _(Escribir al cerrar el módulo. Tres preguntas para orientarla:)_
 
 <div align="center">
 
-**Nombre Completo** · correo@ejemplo.com
+**Dayanna Sanchez Jimenez** · daya20sanchez@gmail.com
 
 Portafolio elaborado durante el módulo CSTI12002 · Instituto Nacional de Aprendizaje · 2026
 
