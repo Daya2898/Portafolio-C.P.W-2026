@@ -62,7 +62,7 @@ Portafolio-Codificación de Páginas Web/
 |  S04   | Texto, enlaces y anclas        | Agregamos el favicon y los metadatos de una pagina personales.Y profundizamos en la estructura y organización de documentos HTML mediante la implementación de etiquetas semánticas, mejorando la accesibilidad y el orden lógico del sitio. Asimismo, integramos enlaces de tipo ancla para optimizar la navegación interna dentro de la misma página. | [ver](UNIDAD-02-html/Sitio.demo/articulo.html) | [ver](/recursos/Evidencia-favicon.png/S.4.Enlaces-tipo-anclas1/S.4.Enlaces-tipo-anclas2/S.4.Enlaces-tipo-anclas3/S.4.Texto_semantico_citas)|
 |  S05   | Listas y tablas|Aprendi a trabajar los 3 tipos de listas con sus tipos y estilo. tambien la parte de tablas semánticas.| [ver](UNIDAD-02-html/Sitio.demo/horarios.html) | [ver](UNIDAD-02-html/Sitio.demo/Recursos/S05-listas-y-tablas.png)|
 |  S06   | Formularios y semántica | Aprendimos realizar etiquetas, formulario y validación local de formulario. | [ver](UNIDAD-02-html/Sitio.demo/registro.html) |[ver](recursos/S06-Evidencia-formulario-semantica.png)|
-|  S07   | Multimedia|                                             | [ver](unidad-02/) |[ver](recursos/)|
+|  S07   | Multimedia|Aprendi a realizar etiquetas, controles de audio y video,formatos y portadas y subtítulos.| [ver](UNIDAD-02-html/Sitio.demo/galeria.html) |[ver](recursos/S.07-multimedia.png)|
 |  S08   | SVG y repaso |                                          | [ver](unidad-02/) |[ver](recursos/)|
 
 </details>
