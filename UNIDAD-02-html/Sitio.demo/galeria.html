@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="author" content="Dayanna sanchez" />
-    <meta
-      name="description" content="Imagen de la galeria con contenido relacionado con HTML5 "/>
+    <meta name="author" content="Dayanna sanchez"/>
+    <meta name="description" content="Imagen de la galeria con contenido relacionado con HTML5 "/>
     <meta name="keywords" content="HTML5, estándar vivo, WHATWG, W3C, imágenes de laboratorio"/>
+
     <title>Galería | Imágenes</title>
 </head>
 
@@ -27,13 +27,13 @@
     </nav>
   </header>
 
-  <main id="contenido">
+  <main id="Contenido">
 
     <article>
         <h2>Galería</h2>
 
     <!--Imagen y sus atributos-->
-    <img src="Recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="400" />
+    <img src="Recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="400"/>
 
     <!--FIGURE: agrupa contenido con un PIE.-->
       <figure>
@@ -47,7 +47,7 @@
             <picture>
                 <source srcset="Recursos/S.7_Lab01.webp" type="image/webp" />
                 <source srcset="Recursos/S.7_Lab02.jpg" type="image/jpeg" />
-                <img src="Recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="800" height="500" />
+                <img src="Recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="800" height="500"/>
             </picture>
             <figcaption>Imagen de un laboratorio de informatica</figcaption>
         </figure>
@@ -57,10 +57,10 @@
         <h3>Audio de Bienvenida</h3>
 
         <audio controls>
-            <source src="Recursos/End of Line (From _TRON_ Legacy__Score) 0.mp3" type="audio/mpeg" />
-            <source src="Recursos/End of Line (From _TRON_ Legacy__Score) 0.ogg" type="audio/ogg" />
+            <source src="Recursos/End-of-Line.mp3" type="audio/mpeg"/>
+            <source src="Recursos/End-of-Line.ogg" type="audio/ogg"/>
             <p>Tu navegador no soporta el elemento de audio.</p>
-            <a href="Recursos/End of Line (From _TRON_ Legacy__Score) 0.mp3" >Descargar audio</a>
+            <a href="Recursos/End-of-Line.mp3" >Descargar audio</a>
         </audio>
     </section>
 
@@ -68,10 +68,10 @@
     <section id="video">
         <h3>Mini tutorial Capcut</h3>
 
-        <video controls width="800" height="500" poster="Recursos/tuto.jpg" preload="metadata"/>
-            <source src="Recursos/video2.mp4" type="video/mp4" />
-            <source src="Recursos/Tron Legacy - End of Line (1080p).webm" type="video/webm" />
-            <track src="Recursos/video2.vtt" kind="subtitles" srclang="es" label="Español"  default/>
+        <video controls width="800" height="500" poster="Recursos/tuto.jpg" preload="metadata">
+            <source src="Recursos/video2.mp4" type="video/mp4"/>
+            <source src="Recursos/video2.webm" type="video/webm"/>
+            <track src="Recursos/video2.mp4.vtt" kind="subtitles" srclang="es" label="Español"  default/>
             
             <p>Tu navegador no soporta el elemento de video.</p>
             <a href="Recursos/video2.mp4">Descargar el archivo de video</a>
