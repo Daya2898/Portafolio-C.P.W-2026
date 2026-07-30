@@ -63,7 +63,7 @@ Portafolio-Codificación de Páginas Web/
 |  S05   | Listas y tablas|Aprendi a trabajar los 3 tipos de listas con sus tipos y estilo. tambien la parte de tablas semánticas.| [ver](UNIDAD-02-html/Sitio.demo/horarios.html) | [ver](UNIDAD-02-html/Sitio.demo/Recursos/S05-listas-y-tablas.png)|
 |  S06   | Formularios y semántica | Aprendimos realizar etiquetas, formulario y validación local de formulario. | [ver](UNIDAD-02-html/Sitio.demo/registro.html) |[ver](recursos/S06-Evidencia-formulario-semantica.png)|
 |  S07   | Multimedia|Aprendi a realizar etiquetas, controles de audio y video,formatos y portadas y subtítulos.| [ver](UNIDAD-02-html/Sitio.demo/galeria.html) |[ver](recursos/S.07-multimedia.png)|
-|  S08   | SVG y repaso |                                          | [ver](unidad-02/) |[ver](recursos/)|
+|  S08   | SVG y repaso | Aprendi a realizar pagina de insignia html con estructura y ala vez repasamos conceptos y practicas dadas | [ver](UNIDAD-02-html/Sitio.demo/insignia.html) |[ver](Recursos/S08-svg-html.png)|
 
 </details>
 
