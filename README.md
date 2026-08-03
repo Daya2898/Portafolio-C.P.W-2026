@@ -86,10 +86,10 @@ Proyecto propio construido de forma autónoma.
 
 | Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
 |:-------|:-------------|:------------------:|:---:|:----------:|
-| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](unidad-02-html/sitio-personal/index.html) | [ver](recursos/sp-validacion-index.png) |
-| `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas | S05 | [ver](unidad-02-html/sitio-personal/listas.html) | [ver](recursos/sp-validacion-listas.png) |
-| `contacto.html` | Formulario con ocho campos y validación de HTML | S06 | [ver](unidad-02-html/sitio-personal/contacto.html) | [ver](recursos/sp-validacion-contacto.png) |
-| `galeria.html` | Imágenes, audio, video con subtítulos y gráficas SVG | S07 · S08 | [ver](unidad-02-html/sitio-personal/galeria.html) | [ver](recursos/sp-validacion-galeria.png) |
+| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](UNIDAD-02-html/sitio-personal/index.html) | [ver](recursos/sp-validacion-index.png) |
+| `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas | S05 | [ver](UNIDAD-02-html/sitio-personal/listas.html) | [ver](recursos/sp-validacion-listas.png) |
+| `contacto.html` | Formulario con ocho campos y validación de HTML | S06 | [ver](UNIDAD-02-html/sitio-personal/contacto.html) | [ver](recursos/sp-validacion-contacto.png) |
+| `galeria.html` | Imágenes, audio, video con subtítulos y gráficas SVG | S07 · S08 | [ver](UNIDAD-02-html/sitio-personal/galeria.html) | [ver](recursos/sp-validacion-galeria.png) |
 
 **Decisiones que tomé**
 
