@@ -82,7 +82,7 @@ Portafolio-Codificación de Páginas Web/
 ### El sitio personal
 
 Proyecto propio construido de forma autónoma.
-**Tema del sitio:** _(escribir aquí el tema elegido)_
+**Tema del sitio:** _Galería de arte y taller interactivo "Echoes of Time_
 
 | Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
 |:-------|:-------------|:------------------:|:---:|:----------:|
@@ -95,10 +95,10 @@ Proyecto propio construido de forma autónoma.
 
 | Decisión | Qué elegí | Por qué |
 |:---------|:----------|:--------|
-| Tema del sitio | | |
-| Atributo de la lista ordenada | | |
-| Formatos de imagen usados | | |
-| Formas del gráfico SVG | | |
+| Tema del sitio | Galeria de arte e ilustración *Echoes of Time| Permite integrar contenido visua, como archivo multimedias y estructuras con horarios de talleres de forma orgánica. |
+| Atributo de la lista ordenada | `reversed` y `type="1"` | Para mostrar la secuencia cronológica de eventos artísticos desde la edición más reciente hacia la más antigua.|
+| Formatos de imagen usados | `WebP` como primera opción e `JPEG` / `PNG` de respaldo| Porque maximiza la velocidad de carga manteniendo alta fidelidad de color en las acuarelas. |
+| Formas del gráfico SVG | `<rect>`, `<circle>`, `<polygon>`, `<line>` y `<text>` | Esto combinadas crean un isotipo geométrico representativo del taller sin depender de archivos de imagen externos. |
 
 **Cómo se ve**
 
