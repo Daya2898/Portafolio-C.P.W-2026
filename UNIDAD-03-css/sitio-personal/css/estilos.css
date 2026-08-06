@@ -1,0 +1,40 @@
+/* Reset básico para mi sitio personal*/
+
+* {
+    margin: 30;
+    padding: 30, color;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #6895a6;
+    background-color: #f5f3ec;
+}/*definela fuente y color de texto*/
+
+h1{
+    color: #8e5a21;
+    font-size: 32px;
+    text-align: center;
+}
+h2{
+    color: #8e5a21;
+    font-size: 30px;
+    text-align: left;
+
+}
+h3{
+    color: #8e5a21;
+    font-size: 21px;
+    text-align: left;
+}
+
+button{
+    background-color: #6895a6;
+    color: #f5f3ec;
+    padding-left: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    border-bottom:none;
+    border-radius: 5px;
+}
+
