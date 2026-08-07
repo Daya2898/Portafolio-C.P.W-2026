@@ -6,15 +6,57 @@
     padding:0;
     box-sizing:border-box;
 }/*Esta regla elimina los margenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
-
 body {
     font-family: Arial, sans-serif;
     color: #69706b9f;
-    background-color: #e0b972;
+    background-color: #c2c3c0;
 } /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
-
 h1{
     color:#1f4e79;
     font-size: 32px;
     text-align: center;
+}
+/*Aplicar estilos a clases*/
+.destacado{
+    background-color: #fff3cd;
+    padding: 10px; /*aplica como las manesillas del reloj: arriba-derecha-abajo-izquierda*/
+}
+
+/*Aplicar estilos a identificadores  o IDs*/
+#inicio{
+    background-color: #1f4e79;
+    padding: 30px;
+}
+
+/*Aplicar estilos a identificadores  o IDs*/
+nav a{
+    color: #ffff;
+    margin-right: 15px;
+    transition: color 0.3; /*cambio suave */
+}
+/*Pseudo-clase :hover*/
+nav a:hover {
+    color: #f8cbad; /*al pasar el cursor*/
+}
+
+/*Pseudo-clase :nth-child: filas cebra en la tabla*/
+tbody tr :nth-child(even){
+    background-color: #d7c5c5;
+}
+
+/*Pseudo-elemento ::firts-letter y ::selection*/
+article p::first-letter{
+    font-size: 32px;
+    font-weight: bold;
+    color: #c55a11;
+}
+::selection{
+    background-color: #1f4e79;
+    color: white;
+}
+
+/*Agregar familia de fuentes traida de google fonts*/
+body{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
