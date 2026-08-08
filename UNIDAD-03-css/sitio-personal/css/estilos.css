@@ -1,40 +1,107 @@
 /* Reset básico para mi sitio personal*/
 
 * {
-    margin: 30;
-    padding: 30, color;
+    margin: 0;
+    padding: 0, color;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Times New Roman', Times, serif;
-    color: #6895a6;
-    background-color: #f5f3ec;
+    body{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #05212c;
+    background-color: #eff5ec;
+    line-height: 1.6;
+}
 }/*definela fuente y color de texto*/
 
 h1{
-    color: #8e5a21;
+    color: #9d00fe;
     font-size: 32px;
     text-align: center;
 }
-h2{
-    color: #8e5a21;
-    font-size: 30px;
-    text-align: left;
 
+.destacado{
+    background-color: #c19cd038;
+    padding: 10px; /* arriba-derecha-abajo-izquierda*/
 }
-h3{
-    color: #8e5a21;
-    font-size: 21px;
-    text-align: left;
+
+/* identificadores  o IDs*/
+#inicio{
+    background-color: #073a5757;
+    padding: 30px;
+}
+
+/* estilos a identificadores  o IDs*/
+nav a{
+    color: #ffffff;
+    margin-right: 15px;
+    transition: color 0.3s; /*cambio suave */
+}
+
+/*Pseudo-clase :hover*/
+nav a:hover {
+    color: #f4680b; /*al pasar el cursor*/
+    /*Pseudo-elemento ::before: ícono decorativo antes de cada enlace del menú*/
+}
+button:hover {
+    background-color: #527a8a;
+}
+
+/*Pseudo-clase :nth-child: filas cebra en la tabla*/
+tbody tr:nth-child(even){
+    background-color: #ebb6b6;
+}
+/*Estilo para el encabezado de la tabla de cronograma*/
+thead th {
+    background-color: #dcd0df; /* color de fondo  */
+    padding: 8px 12px; /* espacio interno para que no se vea apretado */
+    text-align: center; /* alinea el texto al centro */
+}
+/*este ayuda a resaltar los campos del formulario*/
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #beb50e;
+    outline: none;
+    background-color: #e28b34bb;
+    transition: border-color 0.3s, background-color 0.3s;
+}   
+ /*Pseudo-clase :focus, resalta el botón cuando se navega con el teclado.*/
+button:focus {
+    outline: 3px solid #9d00fe;
+    outline-offset: 2px;
+}
+
+/*Pseudo-elemento ::firts-letter y ::selection*/
+article p::first-letter{
+    font-size: 32px;
+    font-weight: bold;
+    color: #527e00;
+}
+::selection{
+    background-color: #6ebd3d;
+    color: white;
+}
+
+/*::before para ícono decorativo antes de cada enlace del menú*/
+nav a::before {
+    content: "*";
+    color: #b701ff;
 }
 
 button{
     background-color: #6895a6;
     color: #f5f3ec;
-    padding-left: 10px 20px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-    border-bottom:none;
-    border-radius: 5px;
+    padding: 6px 14px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer; /*muestra la manita al pasar el cursor*/
+    transition: background-color 0.3s, transform 0.15s;
 }
-
+/*Pseudo-clase :active, efecto al hacer clic esto mientras se mantiene presionado*/
+button:active {
+    transform: scale(0.97);
+}
