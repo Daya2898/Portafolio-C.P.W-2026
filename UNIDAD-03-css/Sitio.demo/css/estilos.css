@@ -5,11 +5,13 @@ por omisiòn son 16px, */
 html{
     font-size: 100%;
 }
+
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }/*Esta regla elimina los margenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
+
 body {
     font-size: 1rem;
     line-height: 1.6;
@@ -37,9 +39,30 @@ p{
     font-size: 1rem;
     font-weight: 400;
 }
+
 main p{
     max-width: 70ch;
 }/*ch es el ancho del caracter cero de la fuente en uso, el valor de 70 marca el rango de lectura cómoda por linea o renglón. más larga, la vista se pierde al cambio de linea*/
+
+main a{
+    text-decoration: none;
+    border-bottom: 1px solid #1f4e79;
+}
+
+blockquote{
+    font-style: italic;
+    color: #555;
+}
+
+/*Transformación y espacio*/
+
+header nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
 /*Aplicar estilos a clases*/
 .destacado{
     background-color: #fff3cd;
@@ -58,6 +81,7 @@ nav a{
     margin-right: 15px;
     transition: color 0.3s; /*cambio suave */
 }
+
 /*Pseudo-clase :hover*/
 nav a:hover {
     color: #f8cbad; /*al pasar el cursor*/
@@ -74,6 +98,7 @@ article p::first-letter{
     font-weight: bold;
     color: #c55a11;
 }
+
 ::selection{
     background-color: #1f4e79;
     color: white;
