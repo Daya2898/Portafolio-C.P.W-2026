@@ -80,6 +80,9 @@ header nav a {
     font-size: 0.9rem;
     text-decoration: none;
 }
+header ul li{
+    list-style-type: none;
+}
 
 /*Aplicar estilos a clases*/
 .destacado{
