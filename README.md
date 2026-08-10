@@ -124,7 +124,7 @@ Proyecto propio construido de forma autónoma.
 | :----: | :------------------------- | :---------- | :---------------: | :--------------: |
 |  S11   | Introducción a CSS         | Introducción a CSS, sintaxis y validación| [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s11-stilos-css.png) |
 |  S12   | Selectores y pseudo-clases | A integrar los selectores,pseudo-clases, pseudo-elementos y introducción ala tipografia | [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s12-selectores.png) |
-|  S13   | Tipografía y color         |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S13   | Tipografía y color         | Aprendi a integrar tipografia avanzada,color y fondos.      | [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/S13-tipografia-fondos.png) |
 |  S14   | Modelo de cajas            |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S15   | Display y posicionamiento  |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S16   | Flexbox                    |             | [ver](unidad-03/) | [ver](recursos/) |
