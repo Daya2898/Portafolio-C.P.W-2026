@@ -19,11 +19,11 @@ body {
     color: #333;
     background-color: #fcfcfc;
 } /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
-main {
-    max-width: 1000px;
+.contenedor{
+    max-width: 1200px;
     margin: 0 auto;
-    /*Aplica a la parte vertical y horizontal el auto: reparte el espacio sobrante por el igual a ambos lado,lo centra en un elemento con ancho limitado de max-width: 1000px*/
-}
+}/*Aplica a la parte vertical y horizontal el auto: reparte el espacio sobrante por el igual a ambos lado,lo centra en un elemento con ancho limitado de max-width: 1000px*/
+
 h1{
     color:#aad6fe;
     text-align: center;
@@ -86,10 +86,12 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
 }
-header ul li{
+header nav ul{
     list-style-type: none;
-}
+}/*Quita las viñetas y el subrayado*/
 
 /*Aplicar estilos a clases*/
 .destacado{
@@ -158,7 +160,20 @@ padding-left 10px aplica izquierda*/
 /*Aplicamos ala tabla horario.html*/
 th, td {
     padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
 
+}
+
+thead th{
+    background-color: #1f4e79;
+    color: white;
+}/*Trabaja las 4 celdas del encabezados de la tabla */
+
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
 }
 fieldset{
     padding: 16px
@@ -166,4 +181,38 @@ fieldset{
 
 section{
     margin-bottom: 32px;
+}
+
+/*Listas de horario.html*/
+main ul, main ol{
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+main li{
+    margin-bottom: 6px;
+}
+
+/*La lista descriptiva*/
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd{
+    margin-left: 20px;
+    margin-bottom: 8px;
+}/*La sangria del <dd> es lo que hace visible la relación entre el termino y su descripción*/
+
+/*La tabla de calendario*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+caption{
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 24px;
 }
