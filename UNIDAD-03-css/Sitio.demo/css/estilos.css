@@ -86,12 +86,15 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
-    display: inline-block;
     padding: 10px 15px;
 }
 header nav ul{
     list-style-type: none;
 }/*Quita las viñetas y el subrayado*/
+
+header nav li{
+    display: inline-block;
+}/*Coloca las opciones de menú en línea, uno al lado del otro*/
 
 /*Aplicar estilos a clases*/
 .destacado{
