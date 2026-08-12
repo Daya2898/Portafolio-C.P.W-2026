@@ -18,6 +18,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #fcfcfc;
+    padding-top: 180px;
 } /*Esta regla define la fuente y el color del texto en el cuerpo del documento*/
 
 .contenedor{
@@ -109,12 +110,21 @@ nav li{
 
 /*Aplicar estilos a identificadores  o IDs*/
 #inicio{
+    position: fixed; /*Vista fija con respecto a la ventana, cabecera queda fija arriba*/
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url(../Recursos/fondo1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px;
+    z-index: 100; /*Cuanto mayor es el numero mas al frente va a estar*/
 }
+/*#inicio{
+    position: sticky;/*Fluye normal y se pega al llegar arriba o límite de su contenedor
+    top: 0;
+}*/
 
 /*Aplicar estilos a identificadores  o IDs*/
 nav a{
@@ -145,11 +155,7 @@ article p::first-letter{
     color: white;
 }
 
-/*Agregar familia de fuentes traida de google fonts*/
-body{
-    font-family: "Poppins",Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-}
+
 aside{
     padding: 20px;
     border: 2px solid #c55a11;
@@ -175,7 +181,7 @@ th, td {
 thead th{
     background-color: #1f4e79;
     color: white;
-}/*Trabaja las 4 celdas del encabezados de la tabla */
+}/*Trabaja las 4 celdas del encabezados de la tabla: Semana.Dia.Modalidad.contenido*/
 
 tfoot td{
     padding: 12px;
@@ -238,3 +244,24 @@ conserva su propia posición y los elementos vecinos no se mueven.
 absolute:Se ubica respecto al ancestro más cercano
 fixed: Se ubica respecto a la ventana no se mueve al desplazarse.
 sticky: Fluye normal asta llegar a un umbral,ej-(stroll arriba) y entonces se pega.*/
+
+.figura-destacada{
+    position:relative;/*posiciona como padre y este no se mueve. Es referencia de hijos absolutos*/
+}
+
+.etiqueta {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c55a11;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    z-index: 10;
+}   /*z-index SOLO FUNCIONA en elementos con positions declarado
+si el es static no funciona.
+escala de valores de z-index
+10 para elementos posicionados dentro del contenido.
+100 la cabecera fija.
+10000 ventanas emergentes y capas superpuestas
+9999  no hace falta usarlo casi nunca por que no deja margen a otro valor por encima */
