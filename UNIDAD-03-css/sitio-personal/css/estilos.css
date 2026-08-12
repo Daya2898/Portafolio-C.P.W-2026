@@ -19,8 +19,8 @@ body{
 
 .contenedor{
     max-width: 1200px;
-    margin: auto;
-    padding: 25px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 h1{
@@ -30,6 +30,7 @@ h1{
     font-weight: 700;
     margin-top: 30px;
     text-transform: uppercase;
+
 }
 
 h2{
@@ -58,9 +59,10 @@ header{
 }
 
 footer{
-     background-color: #d6a756;
+    background-color: #d6a756;
     padding: 20px;
     margin-top: 32px;
+    text-align: center;
 }
 .portada-texto{
     background-color: rgba(0, 0, 0, 0.35);
@@ -85,13 +87,23 @@ blockquote{
 
 header nav a {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-size: 0.9rem;
     text-decoration: none;
+    
 }
-header ul li{
+
+header nav ul{
     list-style-type: none;
+    text-align: right;
+
 }
+
+nav li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
 .destacado{
     background-color: #ffff;
     padding: 10px; /* arriba-derecha-abajo-izquierda*/
@@ -123,6 +135,11 @@ thead th {
     padding: 8px 12px; /* espacio interno para que no se vea apretado */
     text-align: center; /* alinea el texto al centro */
 }
+
+fieldset{
+    padding: 16px
+}
+
 /*este ayuda a resaltar los campos del formulario*/
 input:focus,
 textarea:focus,
@@ -152,6 +169,22 @@ aside{
     padding: 20px;
     border: 2px solid #ebb6b6;
     border-radius: 8px;
+}
+
+/*Tabla*/
+th,td{
+    padding: 10px;
+    border: 1px solid #d6a756;
+    text-align: left;
+}
+thead th{
+    background-color: #f5f1e8;
+    color: rosybrown;
+}
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #ebb6b6;
 }
 
 button{
