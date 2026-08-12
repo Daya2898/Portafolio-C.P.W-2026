@@ -18,10 +18,12 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #fcfcfc;
-} /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
+} /*Esta regla define la fuente y el color del texto en el cuerpo del documento*/
+
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 25px
 }/*Aplica a la parte vertical y horizontal el auto: reparte el espacio sobrante por el igual a ambos lado,lo centra en un elemento con ancho limitado de max-width: 1000px*/
 
 h1{
@@ -77,6 +79,7 @@ main a{
 blockquote{
     font-style: italic;
     color: #555;
+    border-left: 4px solid #1f4e79;
 }
 
 /*Transformación y espacio*/
@@ -94,14 +97,8 @@ header nav ul{
 
 nav li{
     margin-right: 15px;
-}
-
-header nav li{
     display: inline-block;
-    /*visibility: hidden;oculta la linea de menu*/
-}/*Coloca las opciones de menú en línea, uno al lado del otro*/
-
-
+}/*coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden; oculta la linea de menu,pero sigue existiendo.display:none;oculta la linea de menú y libera el espacio*/
 
 /*Aplicar estilos a clases*/
 .destacado{
@@ -225,6 +222,13 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
+}
+
+/*Las figuras de galeria.html*/
+figure {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px
 }
 
 /*Los 5 valores de position
