@@ -14,31 +14,47 @@ body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #252525;
     background-color: #f5f1e8;
+    padding-top: 180px;
 }/*definela fuente y color de texto*/
+
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
 
 h1{
     color: #b85c38;
     text-align: center;
-}
-h1{
     font-size: 2.5rem;
     font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
+
 h2{
     font-size: 2rem;
     font-weight: 700;
 }
 h3{
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
 }
 p{
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 16px;/*separación entre parrafos*/
 }
+
+/* identificadores  o IDs*/
 header{
     background-color: #d6a756;
     color: wheat;
+    background-image: url(../recursos/fondo1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding: 30px;
 }
 
 footer{
@@ -53,6 +69,7 @@ footer{
 }
 h2, h3{
     color: #68735a;
+    margin-bottom: 12px;
 }
 main p{
     max-width: 70ch;
@@ -78,15 +95,6 @@ header ul li{
 .destacado{
     background-color: #ffff;
     padding: 10px; /* arriba-derecha-abajo-izquierda*/
-}
-
-/* identificadores  o IDs*/
-#inicio{
-    background-image: url(../recursos/fondo1.jpg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    padding: 30px;
 }
 
 /* estilos a identificadores  o IDs*/
@@ -139,6 +147,11 @@ article p::first-letter{
 ::selection{
     background-color: #6ebd3d;
     color: white;
+}
+aside{
+    padding: 20px;
+    border: 2px solid #ebb6b6;
+    border-radius: 8px;
 }
 
 button{
