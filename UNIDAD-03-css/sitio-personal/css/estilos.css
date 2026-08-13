@@ -14,37 +14,61 @@ body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #252525;
     background-color: #f5f1e8;
+    padding-top: 200px;
 }/*definela fuente y color de texto*/
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
 
 h1{
     color: #b85c38;
     text-align: center;
-}
-h1{
     font-size: 2.5rem;
     font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+
 }
+
 h2{
     font-size: 2rem;
     font-weight: 700;
 }
 h3{
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
 }
 p{
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 16px;/*separación entre parrafos*/
 }
+
+/* identificadores  o IDs*/
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #d6a756;
     color: wheat;
+    background-image: url(../recursos/fondo1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    z-index: 100;
+
 }
 
 footer{
-     background-color: #d6a756;
+    background-color: #d6a756;
     padding: 20px;
     margin-top: 32px;
+    text-align: center;
 }
 .portada-texto{
     background-color: rgba(0, 0, 0, 0.35);
@@ -53,6 +77,7 @@ footer{
 }
 h2, h3{
     color: #68735a;
+    margin-bottom: 12px;
 }
 main p{
     max-width: 70ch;
@@ -64,29 +89,31 @@ main a {
 blockquote{
     font-style: italic;
     color: #252525;
+    border-left: 4px solid #f4680b;
 }
 
 header nav a {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-size: 0.9rem;
     text-decoration: none;
+    
 }
-header ul li{
+
+header nav ul{
     list-style-type: none;
+    text-align: right;
+
 }
+
+nav li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
 .destacado{
     background-color: #ffff;
     padding: 10px; /* arriba-derecha-abajo-izquierda*/
-}
-
-/* identificadores  o IDs*/
-#inicio{
-    background-image: url(../recursos/fondo1.jpg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    padding: 30px;
 }
 
 /* estilos a identificadores  o IDs*/
@@ -115,6 +142,62 @@ thead th {
     padding: 8px 12px; /* espacio interno para que no se vea apretado */
     text-align: center; /* alinea el texto al centro */
 }
+
+fieldset{
+    padding: 16px
+}
+
+.figura-destacada{
+    position: relative;
+}
+.etiqueta{
+    position:absolute;
+    top: 1px;
+    right: 100px;
+    background-color: #b85c38;
+    color: #ebb6b6;
+    border-radius: 0px 10px 0px 10px;
+    font-size: 0.875rem;
+    z-index: 10;
+    padding: 5px;
+}
+section{
+    margin-bottom: 32px;
+}
+/*Lista glosario*/
+main ul, main ol{
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+main li{
+    margin-bottom: 6px;
+}
+/*Lista*/ 
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+#glosario dd{
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+caption{
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+figure{
+    border: 1px solid #f4680b;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+
 /*este ayuda a resaltar los campos del formulario*/
 input:focus,
 textarea:focus,
@@ -139,6 +222,24 @@ article p::first-letter{
 ::selection{
     background-color: #6ebd3d;
     color: white;
+}
+aside{
+    padding: 20px;
+    border: 2px solid #ebb6b6;
+    border-radius: 8px;
+}
+
+/*Tabla*/
+th,td{
+    padding: 10px;
+    border: 1px solid #d6a756;
+    text-align: left;
+}
+
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #ebb6b6;
 }
 
 button{

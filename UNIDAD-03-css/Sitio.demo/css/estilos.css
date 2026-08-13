@@ -140,7 +140,7 @@ nav a:hover {
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
 tbody tr :nth-child(even){
-    background-color: #d7c5c5;
+    background-color: #f8cbad;
 }
 
 /*Pseudo-elemento ::firts-letter y ::selection*/
