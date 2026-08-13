@@ -94,12 +94,14 @@ header nav a {
 }
 header nav ul{
     list-style-type: none;
+    display: flex;/*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
+    
 }/*Quita las viñetas y el subrayado*/
 
-nav li{
-    margin-right: 15px;
+  /*header nav li
+   margin-right: 15px;
     display: inline-block;
-}/*coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden; oculta la linea de menu,pero sigue existiendo.display:none;oculta la linea de menú y libera el espacio*/
+coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden; oculta la linea de menu,pero sigue existiendo.display:none;oculta la linea de menú y libera el espacio*/
 
 /*Aplicar estilos a clases*/
 .destacado{
