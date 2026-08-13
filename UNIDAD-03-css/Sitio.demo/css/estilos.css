@@ -51,11 +51,18 @@ p{
 header{
     background-color: #1f4e79;
     color: white;
+    padding: 24px;
+    border-radius: 8px;
 }
 footer{
     background-color: #dce6f1;
     padding: 20px;
     margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
 .portada-texto{
     background-color: rgba(0, 0, 0, 0.35);
