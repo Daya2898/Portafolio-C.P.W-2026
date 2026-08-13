@@ -18,7 +18,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #fcfcfc;
-    padding-top: 180px;
+    padding-top: 100px;
 } /*Esta regla define la fuente y el color del texto en el cuerpo del documento*/
 
 .contenedor{
@@ -51,11 +51,18 @@ p{
 header{
     background-color: #1f4e79;
     color: white;
+    padding: 24px;
+    border-radius: 8px;
 }
 footer{
     background-color: #dce6f1;
     padding: 20px;
     margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
 .portada-texto{
     background-color: rgba(0, 0, 0, 0.35);
@@ -92,14 +99,25 @@ header nav a {
     text-decoration: none;
     padding: 10px 15px;
 }
+header nav{
+    align-self: center;/*anula aling-items para elementos especificos*/
+}
 header nav ul{
     list-style-type: none;
+    display: flex;/*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
+    gap: 15px; /*Separación uniforme entre elementos (que contiene un contenedor)*/
+    /* justify-content: flex-start;/*coloca elementos al inicio de la fila
+    justify-content: flex-end; coloca elementos al final de la fila
+    justify-content: center;/*coloca elementos en el centro de la fila
+    justify-content: space-between;/*coloca elementos extermos pegados
+    justify-content: space-around;/*coloca espacio al rededor de cada uno*/
+    justify-content: space-evenly;/*coloca espacios iguales a la fila*/
 }/*Quita las viñetas y el subrayado*/
 
-nav li{
-    margin-right: 15px;
+  /*header nav li
+   margin-right: 15px;
     display: inline-block;
-}/*coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden; oculta la linea de menu,pero sigue existiendo.display:none;oculta la linea de menú y libera el espacio*/
+coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden; oculta la linea de menu,pero sigue existiendo.display:none;oculta la linea de menú y libera el espacio*/
 
 /*Aplicar estilos a clases*/
 .destacado{
@@ -110,6 +128,10 @@ nav li{
 
 /*Aplicar estilos a identificadores  o IDs*/
 #inicio{
+    display: flex;
+    justify-content: space-between;
+    /*align-items: flex-start;acomoda arriba
+    /*align-items: center;acomoda al centro,align-items:flex-end-acomoda abajo,aling-items: basiline; alinea por la linea base del texto*/ 
     position: fixed; /*Vista fija con respecto a la ventana, cabecera queda fija arriba*/
     top: 0;
     left: 0;
@@ -118,7 +140,7 @@ nav li{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 12px 20px;
     z-index: 100; /*Cuanto mayor es el numero mas al frente va a estar*/
 }
 /*#inicio{
@@ -265,3 +287,29 @@ escala de valores de z-index
 100 la cabecera fija.
 10000 ventanas emergentes y capas superpuestas
 9999  no hace falta usarlo casi nunca por que no deja margen a otro valor por encima */
+
+.centrado{
+    display: flex;
+    justify-content: center;/*centrado horizontal*/
+    align-items: center;/*centrado vertical*/
+}
+
+.fila-targetas{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    /*padding: 20px;
+    flex-grow: 1;/*cuando crece si sobra espacio.0 no crece-
+    flex-shrink: 1;/*cuando encoge si sobre espacio. 0 no se encoge
+    flex-basis: 0;*/
+    flex-grow: wrap-reverse;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+}
+.targeta{
+    display: flex;
+    flex:1;
+    gap: 20px;
+    flex-grow: nowrap;
+}
