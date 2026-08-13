@@ -18,7 +18,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #fcfcfc;
-    padding-top: 180px;
+    padding-top: 100px;
 } /*Esta regla define la fuente y el color del texto en el cuerpo del documento*/
 
 .contenedor{
@@ -92,6 +92,9 @@ header nav a {
     text-decoration: none;
     padding: 10px 15px;
 }
+header nav{
+    align-self: center;/*anula aling-items para elementos especificos*/
+}
 header nav ul{
     list-style-type: none;
     display: flex;/*Activa flexbox y coloca en fila horizontal los elementos por defecto*/
@@ -120,7 +123,8 @@ coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden
 #inicio{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: flex-start;acomoda arriba
+    /*align-items: center;acomoda al centro,align-items:flex-end-acomoda abajo,aling-items: basiline; alinea por la linea base del texto*/ 
     position: fixed; /*Vista fija con respecto a la ventana, cabecera queda fija arriba*/
     top: 0;
     left: 0;
@@ -276,3 +280,9 @@ escala de valores de z-index
 100 la cabecera fija.
 10000 ventanas emergentes y capas superpuestas
 9999  no hace falta usarlo casi nunca por que no deja margen a otro valor por encima */
+
+.centrado{
+    display: flex;
+    justify-content: center;/*centrado horizontal*/
+    align-items: center;/*centrado vertical*/
+}
