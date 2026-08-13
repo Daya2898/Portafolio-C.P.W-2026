@@ -127,7 +127,7 @@ Proyecto propio construido de forma autónoma.
 |  S13   | Tipografía y color         | Aprendi a integrar tipografia avanzada,color y fondos.      | [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/S13-tipografia-fondos.png) |
 |  S14   | Modelo de cajas            | Trabajamos margin,box-sizing| [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s14.modelo-cajas.png) |
 |  S15   | Display y posicionamiento  | Trabajamos integración de display y position(static-relative-absolute.fixed/sticky)| [ver](UNIDAD-03-css/sitio-personal/galeria.html) | [ver](recursos/s15.display-position.png) |
-|  S16   | Flexbox                    |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S16   | Flexbox                    | Trabajamos propiedades de flexbox para posicionar cajas y sus elementos            | [ver](UNIDAD-03-css/Sitio.demo/galeria.html) | [ver](recursos/S16-flexbox.png) |
 |  S17   | CSS Grid                   |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](unidad-03/) | [ver](recursos/) |
