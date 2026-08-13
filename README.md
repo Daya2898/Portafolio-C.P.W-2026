@@ -125,8 +125,8 @@ Proyecto propio construido de forma autónoma.
 |  S11   | Introducción a CSS         | Introducción a CSS, sintaxis y validación| [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s11-stilos-css.png) |
 |  S12   | Selectores y pseudo-clases | A integrar los selectores,pseudo-clases, pseudo-elementos y introducción ala tipografia | [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s12-selectores.png) |
 |  S13   | Tipografía y color         | Aprendi a integrar tipografia avanzada,color y fondos.      | [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/S13-tipografia-fondos.png) |
-|  S14   | Modelo de cajas            | Trabajamos margin,box-sizing| [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s14.modelo-cajas) |
-|  S15   | Display y posicionamiento  | Trabajamos integración de display y position(static-relative-absolute.fixed/sticky)| [ver](UNIDAD-03-css/sitio-personal/galeria.html) | [ver](recursos/s15.display-position) |
+|  S14   | Modelo de cajas            | Trabajamos margin,box-sizing| [ver](UNIDAD-03-css/sitio-personal/index.html) | [ver](recursos/s14.modelo-cajas.png) |
+|  S15   | Display y posicionamiento  | Trabajamos integración de display y position(static-relative-absolute.fixed/sticky)| [ver](UNIDAD-03-css/sitio-personal/galeria.html) | [ver](recursos/s15.display-position.png) |
 |  S16   | Flexbox                    |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S17   | CSS Grid                   |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |             | [ver](unidad-03/) | [ver](recursos/) |
