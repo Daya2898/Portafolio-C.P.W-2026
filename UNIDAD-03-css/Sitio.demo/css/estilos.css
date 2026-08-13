@@ -286,3 +286,20 @@ escala de valores de z-index
     justify-content: center;/*centrado horizontal*/
     align-items: center;/*centrado vertical*/
 }
+
+.fila-targetas{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    flex-grow: 1;/*cuando crece si sobra espacio.0 no crece*/
+    flex-shrink: 1;/*cuando encoge si sobre espacio. 0 no se encoge*/
+    flex-basis: 0;
+}
+.targeta{
+    display: flex;
+    flex:1;
+    gap: 20px;
+}
