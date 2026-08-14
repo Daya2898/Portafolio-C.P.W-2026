@@ -37,31 +37,62 @@
     <main id="contenido">
         <h2>Galería de arte y producciones multimedia</h2>
 
-        <section id="imagen-simple">
-            <h3>1. Boceto inicial</h3>
-            <img src="recursos/img1.jpg" alt="Boceto detallado a lápiz de grafito sobre papel mostrando líneas de composición iniciales" width="600" height="400">
-        </section >
+        <div class="fila-tarjetas">
 
-        <section id="imagen-figure">
+        <section id="boceto-inicial" class="tarjeta">
+            <h3>1. Boceto inicial</h3>
+            <figure>
+                <img src="recursos/img1.jpg" alt="Boceto detallado a lápiz de grafito sobre papel mostrando líneas de composición iniciales" width="600" height="400">
+                <figcaption>Proceso inicial a mano alzada.</figcaption>
+            </figure>
+        </section>
+
+        <section id="imagen-figure" class="tarjeta">
             <h3>2. Obra en proceso de entintado</h3>
             <figure>
-                <img src="recursos/img2.jpg" alt="Obra en proceso de entintado" width="800" height="500"> 
+                <img src="recursos/img2.jpg" alt="Obra en proceso de entintado" width="600" height="400"> 
                 <figcaption>Proceso de entintado a mano alzada para la colección principal de Echoes of Time.</figcaption>
             </figure>
         </section>
 
-        <section id="imagen-picture">
-            <h3>3.Acuarela terminada en alta resolución</h3>
+        <section id="imagen-picture" class="tarjeta">
+            <h3>3. Acuarela terminada en alta resolución</h3>
             <figure class="figura-destacada">
-            <picture>
-                <source srcset="recursos/img3.webp" type="image/webp">
-                <source srcset="recursos/img3.jpg" type="image/jpeg">
-                <img src="recursos/img3.jpg" alt="Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas." width="800" height="500">
-            </picture>
-            <span class="etiqueta">Más vendida</span>
-            <figcaption>Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas.</figcaption>
+                <picture>
+                    <source srcset="recursos/img3.webp" type="image/webp">
+                    <source srcset="recursos/img3.jpg" type="image/jpeg">
+                    <img src="recursos/img3.jpg" alt="Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas." width="600" height="400">
+                </picture>
+                <figcaption>Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas.</figcaption>
             </figure>
         </section>
+
+        <section id="acabado-producto" class="tarjeta">
+            <h3>4. Aplicación de barniz protector</h3>
+            <figure>
+                <img src="recursos/images4.jpg" alt="Aplicación de barniz en mesa de madera de nogal" width="600" height="400">
+                <figcaption>Capa final de cera natural de abeja aplicada a mano para resaltar las vetas de la madera.</figcaption>
+            </figure>
+        </section>
+
+        <section id="atardecer-faro" class="tarjeta">
+            <h3>5. Vista panorámica desde el acantilado</h3>
+            <figure>
+                <img src="recursos/images5.jpg" alt="Faro sobre acantilado al atardecer con mar embravecido" width="600" height="400">
+                <figcaption>Toma de larga exposición de 2 segundos capturada desde el mirador norte durante la hora dorada.</figcaption>
+            </figure>
+        </section>
+
+        <section id="capa-veladura" class="tarjeta">
+            <h3>6. Aplicación de veladuras al óleo</h3>
+            <figure>
+                <img src="recursos/images6.jpg" alt="Pincel aplicando pigmento azul ultramar semitransparente sobre lienzo" width="600" height="400">
+                <figcaption>Superposición de una capa fina de azul ultramar diluido en aceite de linaza para profundizar las sombras del fondo.</figcaption>
+            </figure>
+        </section>
+    </div>
+
+
 
         <!-- Sección de audio con controles -->
         <section id="audio">
