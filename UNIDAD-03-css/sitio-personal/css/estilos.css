@@ -74,6 +74,11 @@ footer{
     background-color: rgba(0, 0, 0, 0.35);
     padding: 24px;
     border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 h2, h3{
     color: #68735a;
