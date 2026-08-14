@@ -316,7 +316,10 @@ escala de valores de z-index
 
 .galeria-grid{
     display: grid;/*Activa grid al igual que flexbox, se declara en el contenedor*/
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-columns: repeat(2fr, 1fr);/*la primera doble que las otras*/
+    grid-template-columns: 2fr 1fr 1fr;
+    /*grid-template-rows: 200px auto;*/
     gap: 20px;
 }
