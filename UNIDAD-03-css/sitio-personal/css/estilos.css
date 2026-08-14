@@ -288,3 +288,9 @@ button:active {
     text-decoration: none;
     color: #252525;
 }
+.galeria-grid{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
