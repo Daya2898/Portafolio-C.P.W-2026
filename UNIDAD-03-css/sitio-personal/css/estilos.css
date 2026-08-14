@@ -68,7 +68,11 @@ footer{
     background-color: #d6a756;
     padding: 20px;
     margin-top: 32px;
-    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 .portada-texto{
     background-color: rgba(0, 0, 0, 0.35);
@@ -275,7 +279,7 @@ button:active {
 }
 
 .tarjeta {
-    flex: 1 1 calc(33.333% - 20px); /* Ajusta las tarjetas para mostrar 3 por fila en pantallas grandes */
+    flex: 1 1 220px; /* Ajusta las tarjetas para mostrar 3 por fila en pantallas grandes */
     min-width: 280px; /* Ancho mínimo para mantener una buena proporción */
     background-color: #ffffff;
     border: 1px solid #d6a756;
