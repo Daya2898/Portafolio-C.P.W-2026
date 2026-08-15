@@ -294,6 +294,9 @@ button:active {
     gap: 24px;
     margin-bottom: 32px;
 }
+.destacado-grid{
+    grid-column: span 2;
+}
 /* Layout en 2 columnas desiguales */
 .layout-principal {
     display: grid;
