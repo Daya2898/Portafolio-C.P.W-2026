@@ -15,166 +15,155 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<div class="contenedor">
 <body>
-    <!--Esta es la cabezera de sesio1 sitio-personal-->
-    <header id="inicio" class="portada-texto">
-        <div class="titulo-portada">
-      <h1>Galería Multimedia</h1>
-      <p>Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
-      </div>
+    <div class="contenedor">
+        <!-- Cabecera -->
+        <header id="inicio" class="portada-texto">
+            <div class="titulo-portada">
+                <h1>Galería Multimedia</h1>
+                <p>Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
+            </div>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="listas.html">Horarios y Técnicas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-        </ul>
-      </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="listas.html">Horarios y Técnicas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main id="contenido">
-        <h2>Galería de arte y producciones multimedia</h2>
+        <main id="contenido">
+            <h2>Galería de arte y producciones multimedia</h2>
 
-        <div class="galeria-grid">
+            <div class="galeria-grid">
+                <section id="boceto-inicial" class="tarjeta">
+                    <h3>1. Boceto inicial</h3>
+                    <figure>
+                        <img src="recursos/img1.jpg" alt="Boceto detallado a lápiz de grafito sobre papel mostrando líneas de composición iniciales" width="600" height="400">
+                        <figcaption>Proceso inicial a mano alzada.</figcaption>
+                    </figure>
+                </section>
 
-        <section id="boceto-inicial" class="tarjeta">
-            <h3>1. Boceto inicial</h3>
-            <figure>
-                <img src="recursos/img1.jpg" alt="Boceto detallado a lápiz de grafito sobre papel mostrando líneas de composición iniciales" width="600" height="400">
-                <figcaption>Proceso inicial a mano alzada.</figcaption>
-            </figure>
-        </section>
+                <section id="imagen-figure" class="tarjeta">
+                    <h3>2. Obra en proceso de entintado</h3>
+                    <figure>
+                        <img src="recursos/img2.jpg" alt="Obra en proceso de entintado" width="600" height="400"> 
+                        <figcaption>Proceso de entintado a mano alzada para la colección principal de Echoes of Time.</figcaption>
+                    </figure>
+                </section>
 
-        <section id="imagen-figure" class="tarjeta">
-            <h3>2. Obra en proceso de entintado</h3>
-            <figure>
-                <img src="recursos/img2.jpg" alt="Obra en proceso de entintado" width="600" height="400"> 
-                <figcaption>Proceso de entintado a mano alzada para la colección principal de Echoes of Time.</figcaption>
-            </figure>
-        </section>
+                <section id="imagen-picture" class="tarjeta destacado-grid">
+                    <h3>3. Acuarela terminada en alta resolución</h3>
+                    <figure class="figura-destacada">
+                        <picture>
+                            <source srcset="recursos/img3.webp" type="image/webp">
+                            <source srcset="recursos/img3.jpg" type="image/jpeg">
+                            <img src="recursos/img3.jpg" alt="Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas." width="600" height="400">
+                        </picture>
+                        <figcaption>Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas.</figcaption>
+                    </figure>
+                </section>
 
-        <section id="imagen-picture" class="tarjeta destacado-grid">
-            <h3>3. Acuarela terminada en alta resolución</h3>
-            <figure class="figura-destacada">
-                <picture>
-                    <source srcset="recursos/img3.webp" type="image/webp">
-                    <source srcset="recursos/img3.jpg" type="image/jpeg">
-                    <img src="recursos/img3.jpg" alt="Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas." width="600" height="400">
-                </picture>
-                <figcaption>Ilustración finalizada en acuarela con tonos cálidos y texturas orgánicas.</figcaption>
-            </figure>
-        </section>
+                <section id="acabado-producto" class="tarjeta">
+                    <h3>4. Aplicación de barniz protector</h3>
+                    <figure>
+                        <img src="recursos/images4.jpg" alt="Aplicación de barniz en mesa de madera de nogal" width="600" height="400">
+                        <figcaption>Capa final de cera natural de abeja aplicada a mano para resaltar las vetas de la madera.</figcaption>
+                    </figure>
+                </section>
 
-        <section id="acabado-producto" class="tarjeta">
-            <h3>4. Aplicación de barniz protector</h3>
-            <figure>
-                <img src="recursos/images4.jpg" alt="Aplicación de barniz en mesa de madera de nogal" width="600" height="400">
-                <figcaption>Capa final de cera natural de abeja aplicada a mano para resaltar las vetas de la madera.</figcaption>
-            </figure>
-        </section>
+                <section id="atardecer-faro" class="tarjeta">
+                    <h3>5. Vista panorámica desde el acantilado</h3>
+                    <figure>
+                        <img src="recursos/images5.jpg" alt="Faro sobre acantilado al atardecer con mar embravecido" width="600" height="400">
+                        <figcaption>Toma de larga exposición de 2 segundos capturada desde el mirador norte durante la hora dorada.</figcaption>
+                    </figure>
+                </section>
 
-        <section id="atardecer-faro" class="tarjeta">
-            <h3>5. Vista panorámica desde el acantilado</h3>
-            <figure>
-                <img src="recursos/images5.jpg" alt="Faro sobre acantilado al atardecer con mar embravecido" width="600" height="400">
-                <figcaption>Toma de larga exposición de 2 segundos capturada desde el mirador norte durante la hora dorada.</figcaption>
-            </figure>
-        </section>
+                <section id="capa-veladura" class="tarjeta">
+                    <h3>6. Aplicación de veladuras al óleo</h3>
+                    <figure>
+                        <img src="recursos/images6.jpg" alt="Pincel aplicando pigmento azul ultramar semitransparente sobre lienzo" width="600" height="400">
+                        <figcaption>Superposición de una capa fina de azul ultramar diluido en aceite de linaza para profundizar las sombras del fondo.</figcaption>
+                    </figure>
+                </section>
+            </div>
 
-        <section id="capa-veladura" class="tarjeta">
-            <h3>6. Aplicación de veladuras al óleo</h3>
-            <figure>
-                <img src="recursos/images6.jpg" alt="Pincel aplicando pigmento azul ultramar semitransparente sobre lienzo" width="600" height="400">
-                <figcaption>Superposición de una capa fina de azul ultramar diluido en aceite de linaza para profundizar las sombras del fondo.</figcaption>
-            </figure>
-        </section>
-    </div>
+            <!-- Sección de audio -->
+            <section id="audio">
+                <h3>4. Audio explicativo del concepto artístico</h3>
+                <audio controls>
+                    <source src="recursos/audio.mp3" type="audio/mpeg">
+                    <source src="recursos/audio.ogg" type="audio/ogg">
+                    <p>Tu navegador no soporta el elemento de audio. Puedes descargar el archivo de audio <a href="recursos/audio.mp3">aquí</a>.</p>
+                </audio>
+            </section>
 
+            <!-- Sección de video -->
+            <section id="video">
+                <h3>5. Minitutorial: Proceso de digitalización de obras</h3>
+                <video controls width="800" height="500" poster="recursos/tuto1.jpg" preload="metadata">
+                    <source src="recursos/video1.mp4" type="video/mp4">
+                    <source src="recursos/video1.webm" type="video/webm">
+                    <track src="recursos/video1.vtt" kind="captions" srclang="es" label="Español" default>
+                    <p>Tu navegador no soporta el elemento de video. Puedes descargar el archivo de video en <a href="recursos/video1.mp4">este enlace</a>.</p>
+                </video>
+            </section>
 
-
-        <!-- Sección de audio con controles -->
-        <section id="audio">
-            <h3>4. Audio explicativo del concepto artístico</h3>
-            <audio controls>
-                <source src="recursos/audio.mp3" type="audio/mpeg">
-                <source src="recursos/audio.ogg" type="audio/ogg">
-                <p>Tu navegador no soporta el elemento de audio. Puedes descargar el archivo de audio.</p> 
-                <a href="recursos/audio.mp3">aquí</a>
-            </audio>
-        </section>
-
-        <!-- Sección de video con controles -->
-        <section id="video">
-            <h3>5. Minitutorial: Proceso de digitalización de obras</h3>
-            <video controls width="800" height="500" poster="recursos/tuto1.jpg" preload="metadata">
-                <source src="recursos/video1.mp4" type="video/mp4">
-                <source src="recursos/video1.webm" type="video/webm">
-                <track src="recursos/video1.vtt" kind="captions" srclang="es" label="Español" default>
-                <p>Tu navegador no soporta el elemento de video. Puedes descargar el archivo de video.</p>
-                <a href="recursos/video1.mp4">Descargar video</a>
-            </video>
-        </section>
-        
             <article>
                 <h2>6. Gráficas vectoriales</h2>
                 <section id="insignia">
                     <h3>Insignia del sitio</h3>
-                    <svg width="200" height="200"
-                    viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="100" r="90" fill="#CD7F32" />
-                    <circle cx="100" cy="100" r="75" fill="#FAF5E9" stroke="#5D4037" stroke-width="4" />
-                    <rect x="70" y="60" width="60" height="6" rx="3" fill="#5D4037"/>
-                <rect x="70" y="134" width="60" height="6" rx="3" fill="#5D4037"/>
-                <path d="M80,66 C80,66 80,90 100,100 C120,110 120,134 120,134 
-                         M120,66 C120,66 120,90 100,100 C80,110 80,134 80,134
-                         M100,100 C110,110 130,110 140,100 C150,90 140,80 130,80 C120,80 110,90 100,100
-                         M100,100 C90,90 70,90 60,100 C50,110 60,120 70,120 C80,120 90,110 100,100"
-                      fill="none" 
-                      stroke="#D4AF37" 
-                      stroke-width="5" 
-                      stroke-linecap="round"/>
-                      <circle cx="100" cy="103" r="3" fill="#D4AF37">
-                    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
-                </circle>
-                <text x="100" y="50" text-anchor="middle" font-size="8" font-family="Verdana, sans-serif" font-weight="bold" fill="#5D4037">
-                    ECHOES OF TIME
-                </text> 
-            </svg>
+                    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" fill="#CD7F32" />
+                        <circle cx="100" cy="100" r="75" fill="#FAF5E9" stroke="#5D4037" stroke-width="4" />
+                        <rect x="70" y="60" width="60" height="6" rx="3" fill="#5D4037"/>
+                        <rect x="70" y="134" width="60" height="6" rx="3" fill="#5D4037"/>
+                        <path d="M80,66 C80,66 80,90 100,100 C120,110 120,134 120,134 
+                                 M120,66 C120,66 120,90 100,100 C80,110 80,134 80,134
+                                 M100,100 C110,110 130,110 140,100 C150,90 140,80 130,80 C120,80 110,90 100,100
+                                 M100,100 C90,90 70,90 60,100 C50,110 60,120 70,120 C80,120 90,110 100,100"
+                              fill="none" 
+                              stroke="#D4AF37" 
+                              stroke-width="5" 
+                              stroke-linecap="round"/>
+                        <circle cx="100" cy="103" r="3" fill="#D4AF37">
+                            <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                        <text x="100" y="50" text-anchor="middle" font-size="8" font-family="Verdana, sans-serif" font-weight="bold" fill="#5D4037">
+                            ECHOES OF TIME
+                        </text> 
+                    </svg>
+
+                    <p>Esta insignia representa el flujo cíclico de la memoria. Está dibujada con código SVG, lo que garantiza su nitidez y escalabilidad.</p>
+                </section>
+
+                <section id="externo">
+                    <h3>7. La misma insignia</h3>
+                    <img src="recursos/svg.svg" alt="Insignia de Echoes of Time con reloj de arena e infinito">
+                    <p>Esta es la misma insignia representando el flujo cíclico de la memoria.</p>
+                </section>
+            </article>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <address>
+                <p><strong><em>Echoes of Time</em></strong></p>
+                <p>Teléfono: +506 1234 5678</p>
+                <p>email: <a href="mailto:contacto@EchoesofTime.com">contacto@EchoesofTime.com</a></p>
+            </address>
 
             <p>
-                Esta insignia representa el flujo cíclico de la memoria. Está dibujada con código SVG, lo que garantiza su nitidez y escalabilidad.
+                Sitio externo:
+                <a href="https://arteacr.com/" target="_blank" rel="noopener">arteacr.com</a>
             </p>
-        </section>
 
-        <section id="externo">
-            <h3>7. la misma insignia </h3>
-            <img src="recursos/svg.svg" alt="Insignia de Echoes of Time con reloj de arena e infinito">
-            <p>Esta es la misma insignia representando el flujo cíclico de la memoria.</p>
-        </section>
-        </article>
-      </main>
-
-<!-- Pie de página -->
-    <footer>
-      <address>
-        <p><strong><em>Echoes of Time</em></strong></p>
-        <p>Teléfono: +506 1234 5678</p>
-        <p>email:<a href="mailto:contacto@EchoesofTime.com">contacto@EchoesofTime.com</a></p>
-      </address>
-
-      <p>
-        Sitio externo:
-        <a href="https://arteacr.com/" target="_blank" rel="noopener"
-          >arteacr.com</a>
-      </p>
-
-      <p><small>&copy; 2025 Echoes of Time.<abbr title="Echoes of Time"><strong> Echoes of Time</strong></abbr>Todos los derechos reservados.</small>
-      </p>
-
-      <p><small>@DayannaSanchez</small></p>
-    </footer>
+            <p><small>&copy; 2025 Echoes of Time. <abbr title="Echoes of Time"><strong>Echoes of Time</strong></abbr> Todos los derechos reservados.</small></p>
+            <p><small>@DayannaSanchez</small></p>
+        </footer>
+    </div>
 </body>
-</div>
 </html>
