@@ -294,3 +294,14 @@ button:active {
     gap: 24px;
     margin-bottom: 32px;
 }
+/* Layout en 2 columnas desiguales */
+.layout-principal {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 75% para el contenido principal y 25% para el aside */
+    gap: 24px;
+}
+
+/* Espaciado del menú de navegación interna */
+.menu-anclas {
+    margin-bottom: 24px;
+}
