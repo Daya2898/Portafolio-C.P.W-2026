@@ -305,3 +305,31 @@ button:active {
 .menu-anclas {
     margin-bottom: 24px;
 }
+
+/*  Layout usando grid-template-areas */
+.index-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 parte para el aside lateral, 3 partes para el artículo */
+    grid-template-areas:
+        "cabecera cabecera"
+        "lateral  contenido"
+        "pie      pie";
+    gap: 24px;
+}
+
+/* Asignación de áreas a cada elemento */
+.index-main .menu-anclas { 
+    grid-area: cabecera; 
+}
+
+.index-main aside { 
+    grid-area: lateral; 
+}
+
+.index-main article { 
+    grid-area: contenido; 
+}
+
+.index-main .pie-contenido { 
+    grid-area: pie; 
+}
