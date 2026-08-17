@@ -162,8 +162,11 @@ nav a:hover {
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
 tbody tr :nth-child(even){
-    background-color: #f8cbad;
+    background-color: #dce6f1;
 }
+tbody tr :hover{
+    background-color: #e3eef9;
+}/*la novedad de este paso es resaltar la fila de abajo elcursor no es decoración, es ayuda para no perderse en la fila*/
 
 /*Pseudo-elemento ::firts-letter y ::selection*/
 article p::first-letter{
@@ -203,15 +206,27 @@ th, td {
 thead th{
     background-color: #1f4e79;
     color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }/*Trabaja las 4 celdas del encabezados de la tabla: Semana.Dia.Modalidad.contenido*/
 
 tfoot td{
     padding: 12px;
     font-style: italic;
     background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 fieldset{
-    padding: 16px
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 3px solid#ddd;
+    border-radius: 8px;
+}
+legend {
+    padding: 0 8px;
+    font-weight: 700;
+    color: #1f4e79;
 }
 
 section{
@@ -250,13 +265,18 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
-}
+    text-align: left;
+    color: #6b7280;
+}/*El caption primera semana*/
 
 /*Las figuras de galeria.html*/
 figure {
+    background:white; 
     border: 1px solid #dddddd;
     border-radius: 6px;
-    padding: 12px
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1)
+
 }
 
 /*Los 5 valores de position
@@ -302,7 +322,7 @@ escala de valores de z-index
     flex-grow: 1;/*cuando crece si sobra espacio.0 no crece-
     flex-shrink: 1;/*cuando encoge si sobre espacio. 0 no se encoge
     flex-basis: 0;*/
-    flex-grow: wrap-reverse;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
+    flex-wrap: wrap-reverse;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
     border: 1px solid #dddddd;
     border-radius: 8px;
 
@@ -338,23 +358,21 @@ escala de valores de z-index
     grid-row: span 2;/*abarca dos filas*/
 }
 
-#contenido{
+/*#contenido{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 
-    grid-template-areas: 'indice principal' 'indice lateral';
+    /*grid-template-areas: 'indice principal' 'indice lateral';
     /*Css dinuja la estructura, cada cadena de texto es una fila.
     cada palabra dentro es una celda
     repetir un nombre hace que una zona abarque varias celdas.aqui en indice ocupa 2 filas de la primera columna*/
     /*Asignar cada elmento a su área*/
-    #contenido > nav{grid-area:principal;}
+    /*#contenido > nav{grid-area:principal;}
     #contenido > article{grid-area:principal;}
     #contenido > aside{grid-area:lateral;}
-    grid-template-areas: 'indice principal';
+    grid-template-areas: 'indice principal';*/
 
-
-}
 /*Que las imagenes no se desformen*/
 .galeria-grid img{
     width: 100%;
@@ -367,4 +385,119 @@ escala de valores de z-index
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+}
+
+form label{/*Display block: Pone la etiqueta sobre el campo
+            funciona mejor en pantallas angostas*/
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea{
+    width: 100% ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: inherit;/*Los campos del formulario NO heredan la fuente del body
+                    por defecto sin esta línea el formulario apareceria con la fuente del sistema */
+
+}
+
+/*Casilla por separado*/
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    margin-bottom: 0;
+
+}
+
+form input[type="radio"] + label,/*El selector + alcanza la etiqueta y el display: inline los coloca uno al lado del otro*/
+form input[type="checkbox"] + label {
+    display: inline;
+    font-weight: 400;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #1f4e79;
+    box-shadow: 0 0 0 3px rgb(31, 78, 121, 0.15);
+}/*El halo azul alrededor del campo activo.
+    El focus NO es solo decoración es una guia para el usuario*/
+
+    /*Los estrados de validación*/
+    form input:invalid:not(:placeholder-shown){
+        border-color: #c0392b;
+    }
+    form input:valid:not(:placeholder-shown){
+        border-color: #2e7d32;
+    }/*Apoya la validadcion HTML en los required,type,pattern,minlength,ect, colocando un halo de color segun si es dato es correcto o no*/
+
+    /*Para los mensajes de ayuda*/
+    form small{
+        display: block;
+        margin-top: -10px;
+        margin-bottom: 15px;
+        font-size: 0.8rem;
+        color: #6b7280;
+    }/*Los <small>que acompañan a los campos con los textos "minimo 8 caracteres. entre 1 y 8 sesiones,ect."*/
+
+/*Estilizar el botton con estados*/
+.boton, .boton-secundario {
+    background-color: #c55a11;
+    color: white;
+    padding: 12px;
+    border:none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;/*La mano indica elemento pulsable*/
+}
+/* Los tres estados:1 hover:  mas oscuro al pasar el cursor */
+.boton:hover {
+    background-color: #a8490e;
+}
+/* Estados:2 active: Aun mas oscuro mientras se pulsa.*/
+.boton:active{
+    background-color: #65e006;
+}
+
+/* Estados:3 FOCUS*/
+.boton:focus{
+    outline: 2px solid #f56518;
+    outline-offset: 2px;
+}
+
+/*Variante secundario*/
+.boton-secundario{
+    background-color: #6b7280;
+}
+.boton-secundario:hover{
+    background-color: #4d5563;
+}
+.tarjeta {
+    background-color: rgb(246, 245, 245);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0,.15);*/
+}/*0: desplazamiento horizontal. 4px: desplazamiento vertical. 12px: es el desenfoque, cuanto mayor , mas difusa. rgba: color con transparencia*/
+
+/*Tarjeta interactiva*/
+.tarjeta figure:hover{
+    transform: translateY(-5px);/*valor negativo va hacia arriba*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
 }
