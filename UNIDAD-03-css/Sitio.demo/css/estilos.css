@@ -162,8 +162,11 @@ nav a:hover {
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
 tbody tr :nth-child(even){
-    background-color: #f8cbad;
+    background-color: #dce6f1;
 }
+tbody tr :hover{
+    background-color: #e3eef9;
+}/*la novedad de este paso es resaltar la fila de abajo elcursor no es decoración, es ayuda para no perderse en la fila*/
 
 /*Pseudo-elemento ::firts-letter y ::selection*/
 article p::first-letter{
@@ -203,12 +206,16 @@ th, td {
 thead th{
     background-color: #1f4e79;
     color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }/*Trabaja las 4 celdas del encabezados de la tabla: Semana.Dia.Modalidad.contenido*/
 
 tfoot td{
     padding: 12px;
     font-style: italic;
     background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 fieldset{
     padding: 16px
@@ -250,7 +257,9 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
-}
+    text-align: left;
+    color: #6b7280;
+}/*El caption primera semana*/
 
 /*Las figuras de galeria.html*/
 figure {
