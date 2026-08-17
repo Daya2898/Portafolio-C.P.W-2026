@@ -271,9 +271,12 @@ caption{
 
 /*Las figuras de galeria.html*/
 figure {
+    background:white; 
     border: 1px solid #dddddd;
     border-radius: 6px;
-    padding: 12px
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1)
+
 }
 
 /*Los 5 valores de position
@@ -319,7 +322,7 @@ escala de valores de z-index
     flex-grow: 1;/*cuando crece si sobra espacio.0 no crece-
     flex-shrink: 1;/*cuando encoge si sobre espacio. 0 no se encoge
     flex-basis: 0;*/
-    flex-grow: wrap-reserved;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
+    flex-wrap: wrap-reverse;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
     border: 1px solid #dddddd;
     border-radius: 8px;
 
@@ -484,3 +487,10 @@ form textarea:focus {
 .boton-secundario:hover{
     background-color: #4d5563;
 }
+.tarjeta {
+    background-color: rgb(246, 245, 245);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0,.15);*/
+}/*0: desplazamiento horizontal. 4px: desplazamiento vertical. 12px: es el desenfoque, cuanto mayor , mas difusa. rgba: color con transparencia*/
