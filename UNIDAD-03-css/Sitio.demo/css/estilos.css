@@ -319,7 +319,7 @@ escala de valores de z-index
     flex-grow: 1;/*cuando crece si sobra espacio.0 no crece-
     flex-shrink: 1;/*cuando encoge si sobre espacio. 0 no se encoge
     flex-basis: 0;*/
-    flex-grow: wrap-reverse;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
+    flex-grow: wrap-reserved;/* wrap salta hacia abajo- warp-reverse,salta arriba y norap sin salto*/
     border: 1px solid #dddddd;
     border-radius: 8px;
 
@@ -450,3 +450,37 @@ form textarea:focus {
         color: #6b7280;
     }/*Los <small>que acompañan a los campos con los textos "minimo 8 caracteres. entre 1 y 8 sesiones,ect."*/
 
+/*Estilizar el botton con estados*/
+.boton, .boton-secundario {
+    background-color: #c55a11;
+    color: white;
+    padding: 12px;
+    border:none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;/*La mano indica elemento pulsable*/
+}
+/* Los tres estados:1 hover:  mas oscuro al pasar el cursor */
+.boton:hover {
+    background-color: #a8490e;
+}
+/* Estados:2 active: Aun mas oscuro mientras se pulsa.*/
+.boton:active{
+    background-color: #65e006;
+}
+
+/* Estados:3 FOCUS*/
+.boton:focus{
+    outline: 2px solid #f56518;
+    outline-offset: 2px;
+}
+
+/*Variante secundario*/
+.boton-secundario{
+    background-color: #6b7280;
+}
+.boton-secundario:hover{
+    background-color: #4d5563;
+}
