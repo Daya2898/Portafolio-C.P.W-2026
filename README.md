@@ -129,7 +129,7 @@ Proyecto propio construido de forma autónoma.
 |  S15   | Display y posicionamiento  | Trabajamos integración de display y position(static-relative-absolute.fixed/sticky)| [ver](UNIDAD-03-css/sitio-personal/galeria.html) | [ver](recursos/s15.display-position.png) |
 |  S16   | Flexbox                    | Trabajamos propiedades de flexbox para posicionar cajas y sus elementos            | [ver](UNIDAD-03-css/Sitio.demo/galeria.html) | [ver](recursos/S16-flexbox.png) |
 |  S17   | CSS Grid                   |Trabajamos en la integración de grid template | [ver](UNIDAD-03-css/sitio-personal/galeria.html) | [ver](recursos/s17-grid-sp.png) |
-|  S18   | Componentes estilizados    |             | [ver](UNIDAD-03-css/) | [ver](recursos/) |
+|  S18   | Componentes estilizados    |Agrego tarjetas con interactividad, esterilizamos formulario y tablas| [ver](UNIDAD-03-css/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](UNIDAD-03-css/) | [ver](recursos/) |
 |  S20   | SCSS y repaso              |             | [ver](UNIDAD-03-css/) | [ver](recursos/) |
 
