@@ -544,5 +544,7 @@ form textarea:focus {
 
 .etiqueta {
     animation: pulso 2s ease-out infinite;
+    /*animation-iteration-count: 5;
+    animation-direction: alternate;*/
 }
 
