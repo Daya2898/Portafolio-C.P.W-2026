@@ -515,5 +515,20 @@ form textarea:focus {
     transform: rotate(5deg);/*Girar .grados*/
     transform: skew(5deg); /*Inclinar .grados*/
     transform: translateY(-5px) scale(1.03); 
+}
 
+/*definir la transición*/
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*Aplica*/
+.targeta {
+    animation: aparecer 0.6s ease-out;
 }
