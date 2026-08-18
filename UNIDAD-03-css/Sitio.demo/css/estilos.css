@@ -91,6 +91,7 @@ blockquote{
 }
 
 /*Transformación y espacio*/
+/*Aplicar estilos a identificadores  o IDs*/
 
 header nav a {
     text-transform: uppercase;
@@ -98,6 +99,14 @@ header nav a {
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
+    color: #ffff;
+    margin-right: 15px;
+    transition: color 0.3s/*cambio suave*/  
+    /*ease: Arranca lento y acelera,frena.omisión
+    linear:velocidad constante
+    ease-in: Arranca lento
+    ease-out: Sale lento
+    easeint-out;Lento en los dos extremos*/
 }
 header nav{
     align-self: center;/*anula aling-items para elementos especificos*/
@@ -148,15 +157,9 @@ coloca las opciones de menu en linea, uno al lado del otro*//*visibility: hidden
     top: 0;
 }*/
 
-/*Aplicar estilos a identificadores  o IDs*/
-nav a{
-    color: #ffff;
-    margin-right: 15px;
-    transition: color 0.3s; /*cambio suave */
-}
 
 /*Pseudo-clase :hover*/
-nav a:hover {
+header a:hover {
     color: #f8cbad; /*al pasar el cursor*/
 }
 
@@ -289,6 +292,10 @@ sticky: Fluye normal asta llegar a un umbral,ej-(stroll arriba) y entonces se pe
 
 .figura-destacada{
     position:relative;/*posiciona como padre y este no se mueve. Es referencia de hijos absolutos*/
+}
+
+.figura-destacada:hover .etiqueta {
+    transform: scale(1.1) rotate(-3deg);
 }
 
 .etiqueta {
@@ -487,6 +494,9 @@ form textarea:focus {
 .boton-secundario:hover{
     background-color: #4d5563;
 }
+.boton {
+    transition: background-color 0.3s ease;
+}
 .tarjeta {
     background-color: rgb(246, 245, 245);
     padding: 20px;
@@ -499,5 +509,55 @@ form textarea:focus {
 .tarjeta figure:hover{
     transform: translateY(-5px);/*valor negativo va hacia arriba*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);/*Escalar .1 = del tamaño original*/
+    transform: scale(1.1, 0.9);/*X  y Y POR SEPARADO*/
+    transform: translatex(-5px);/*Desplazar .negativo=Hacia arriba*/
+    transform: rotate(5deg);/*Girar .grados*/
+    transform: skew(5deg); /*Inclinar .grados*/
+    transform: translateY(-5px) scale(1.03); 
+}
 
+/*definir la transición*/
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*Aplica*/
+.tarjeta {
+    animation: aparecer 0.6s ease-out;
+}
+
+@keyframes pulso{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+}
+
+.etiqueta {
+    animation: pulso 2s ease-out infinite;
+    /*animation-iteration-count: 5;
+    animation-direction: alternate;*/
+}
+
+/*Apliación de filtros */
+.galeria-grid img:hover {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    /*filter: blur(2px);
+    filter: brightness(1.2);
+    filter: contrast(1.5);
+    filter: saturate(2);
+    filter: sepia(60%);
+    filter: invert(150%);
+    filter: opacity(50%);
+    filter: grayscale(100%) brightness(1.1);*/
 }
