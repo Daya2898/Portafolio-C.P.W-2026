@@ -505,5 +505,11 @@ form textarea:focus {
 .tarjeta figure:hover{
     transform: translateY(-5px);/*valor negativo va hacia arriba*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);/*Escalar .1 = del tamaño original*/
+    transform: scale(1.1, 0.9);/*X  y Y POR SEPARADO*/
+    transform: translatex(-5px);/*Desplazar .negativo=Hacia arriba*/
+    transform: rotate(5deg);/*Girar .grados*/
+    transform: skew(5deg); /*Inclinar .grados*/
+    transform: translateY(-5px) scale(1.03); 
 
 }
