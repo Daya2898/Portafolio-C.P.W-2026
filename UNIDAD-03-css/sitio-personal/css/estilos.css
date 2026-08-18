@@ -87,6 +87,7 @@ article p::first-letter {
 
 /* CABECERA Y NAVEGACIÓN */
 header {
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -200,19 +201,25 @@ th, td {
 
 thead th {
     background-color: #d6a756;
-    padding: 8px 12px;
-    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 tbody tr:nth-child(even) {
     background-color: #ebb6b6;
+}
+tbody tr :hover{
+    background-color: #b6de9d;
 }
 
 tfoot td {
     padding: 12px;
     font-style: italic;
     background-color: #ebb6b6;
+    border-top: 2px solid #f4680b;
 }
+
 
 /* FIGURAS Y ELEMENTOS DE GALERÍA */
 figure {
