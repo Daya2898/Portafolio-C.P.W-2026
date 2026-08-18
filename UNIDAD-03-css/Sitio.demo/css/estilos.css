@@ -548,3 +548,16 @@ form textarea:focus {
     animation-direction: alternate;*/
 }
 
+/*Apliación de filtros */
+.galeria-grid img:hover {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    /*filter: blur(2px);
+    filter: brightness(1.2);
+    filter: contrast(1.5);
+    filter: saturate(2);
+    filter: sepia(60%);
+    filter: invert(150%);
+    filter: opacity(50%);
+    filter: grayscale(100%) brightness(1.1);*/
+}
