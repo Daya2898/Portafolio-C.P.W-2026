@@ -294,6 +294,10 @@ sticky: Fluye normal asta llegar a un umbral,ej-(stroll arriba) y entonces se pe
     position:relative;/*posiciona como padre y este no se mueve. Es referencia de hijos absolutos*/
 }
 
+.figura-destacada:hover .etiqueta {
+    transform: scale(1.1) rotate(-3deg);
+}
+
 .etiqueta {
     position: absolute;
     top: 20px;
