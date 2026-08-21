@@ -277,3 +277,96 @@ img {
     border-top: 0.1rem solid var(--color-linea);
 }
 
+/*Galeria*/
+/*GRID dosdimenciones, cuadricula de filas y columnas*/
+
+.rejilla-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    /*Se lee de adentro hacia afuera. minmax(28rem, 1fr cada columna mida 280px y como maximo una fraccion del espaciodisponible.  repeat(auto-fit: crea tantas como quepan con esa medida. JUNTAS:pone todas las columnas que quepan en 280px y reparte el espacio sobrante entre ellas. responsive si media queris*/
+    gap: var(--esp-md);
+}
+
+.galeria-pieza {
+    position: relative;/*no mueve la figura , solo le declara un punto de referencia para los hijos*/
+    overflow: hidden; /*recorta lo que sobre sale de los limites de la figura . permite que la img se agrande al parsar el curso sin evadir a las figuras vecinas.*/
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+}
+
+.pieza-destacada {
+    grid-column: span 2;  /*ocupa dos columnas*/
+    grid-row: span 2; /*y dos filas*/
+}
+.galeria-pieza img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*recorta la imagen por el centro*/
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: grayscale(60%);/*el filtro quita el 60% del color*/
+}
+
+.galeria-pieza:hover img {
+    transform: scale(1.6);
+    filter: grayscale(0);/*recupera el color*/
+}
+.galeria-pie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;/*absolute se Ubica con respecto al ancestro más cercano con posición relative*/
+    background-color: rgba(0,0,0,0.65);
+    color: var(--color-blanco);
+    padding: var(--esp-xs);
+    font-size: 1.3rem;
+    text-align: center;
+    transform: translateY(100%);/*lo desplaza hacia abajo el 100% de su altura*/
+    transition: transform var(--transicion);
+}
+
+.galeria-pieza:hover .galeria-pie {
+    transform: translateY(0);/*el pie de foto vuelve a su posicion deslizandose desde abajo con la suavidad de la transicion*/
+}
+
+/*EQUIPO*/
+.rejilla-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: var(--esp-md);
+}
+
+.ficha {
+    background-color: var(--color-blanco);
+    padding: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+    text-align: center;
+    transition: transform var(--transicion), box-shadow var(--transicion);
+
+}
+.ficha-foto {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto var(--esp-md);
+    border: 0.3rem solid var(--color-fondo-alt);
+
+}
+.ficha-rol {
+    margin-bottom: 0.2rem;
+}
+
+.ficha-rol {
+    color: var(--color-acento);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: var(--esp-xs);
+}
+.ficha-texto {
+    color: var(--color-suave);
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
