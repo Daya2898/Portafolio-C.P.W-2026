@@ -1,6 +1,6 @@
 /* RESET BÁSICO Y CONFIGURACIÓN GENERAL */
 html {
-    font-size: 100%; /* 16px por omisión del navegador */
+    font-size: 62.5%; /* 16px por omisión del navegador */
 }
 
 * {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #252525;
@@ -22,7 +22,12 @@ body {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
 }
 
 /*TIPOGRAFÍA Y ENCABEZADOS */
@@ -42,12 +47,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    font-weight: 500;
-}
-
-h2, h3 {
-    color: #68735a;
-    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 p {
@@ -60,9 +60,12 @@ main p {
     max-width: 70ch; /* Rango de lectura cómoda por línea */
 }
 
-main a {
+a {
     text-decoration: none;
     border-bottom: 1px solid #b85c38;
+}
+.menu-activo {
+
 }
 
 blockquote {
@@ -102,6 +105,8 @@ header {
     z-index: 100;
 }
 
+
+
 .portada-texto {
     background-color: rgba(0, 0, 0, 0.35);
     padding: 24px;
@@ -111,6 +116,7 @@ header {
     justify-content: space-between;
     gap: 24px;
     flex-wrap: wrap;
+    
 }
 
 header nav a {
@@ -136,6 +142,7 @@ nav a {
     color: #ffffff;
     margin-right: 15px;
     transition: color 0.3s;
+    max-width:70ch ;
 }
 
 /* Pseudo-clase :hover para navegación */
