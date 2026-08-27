@@ -6,7 +6,7 @@
   }
 :root {
     --color-primario: #4b2780;
-    --color-acento: #f7b0b0;
+    --color-acento: #f3c3c3;
     --color-fondo: #FFF7ED;
     --color-texto: #292524;
     --color-blanco: #FFFFFF;
@@ -230,10 +230,11 @@ flex-wrap: wrap;
 .columna-texto { flex: 1 1 34rem; }
 .columna-lista { flex: 1 1 28rem; }
 .lista-servicios{ 
-  margin-bottom: var(--esp-md);
+  margin-bottom: var(--esp-md); 
   padding-left: var(--esp-md); 
 }
-.lista-servicios ul { padding-left: 
+.lista-servicios ul { 
+  padding-left: 
   var(--esp-md); 
   list-style-type: circle; 
   margin-top:var(--esp-xs); 
@@ -250,12 +251,13 @@ flex-wrap: wrap;
   font-weight: 700;
   
 }
+
+.glosario-termino:first-child { 
+  margin-top: 0; 
+}
 .glosario-definicion{ 
   color: var(--sec);
   margin-left: var(--esp-md); 
-}
-.glosario-termino:first-child { 
-  margin-top: 0; 
 }
 /*tarjetas*/ 
 
