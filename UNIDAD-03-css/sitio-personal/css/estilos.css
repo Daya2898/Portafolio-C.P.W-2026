@@ -1,6 +1,6 @@
 /* RESET BÁSICO Y CONFIGURACIÓN GENERAL */
 html {
-    font-size: 100%; /* 16px por omisión del navegador */
+    font-size: 62.5%; /* 16px por omisión del navegador */
 }
 
 * {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #252525;
@@ -22,48 +22,51 @@ body {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
 }
 
 /*TIPOGRAFÍA Y ENCABEZADOS */
-h1 {
-    color: #b85c38;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 30px;
-    text-transform: uppercase;
-}
+h1, h2, h3 {
+    font-family:'Poppins', 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    line-height: 1.2;
+    color:  #2a5768;
 
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
 }
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
+h1 { font-size: 4.8rem;
+     color: #f4680b;
+     font-family: 'Times New Roman', Times, serif;
 }
-
-h2, h3 {
-    color: #68735a;
-    margin-bottom: 12px;
-}
-
+h2 { font-size: 3.2rem;}
+h3 { font-size: 2.0rem;}
+ 
 p {
-    font-size: 1rem;
-    font-weight: 400;
     margin-bottom: 16px;
+}
+a {
+    color:#f4680b;
+    text-decoration: none;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 main p {
     max-width: 70ch; /* Rango de lectura cómoda por línea */
 }
 
-main a {
-    text-decoration: none;
-    border-bottom: 1px solid #b85c38;
+.menu-activo {
+    color: #f4680b;
 }
+
 
 blockquote {
     font-style: italic;
@@ -87,6 +90,7 @@ article p::first-letter {
 
 /* CABECERA Y NAVEGACIÓN */
 header {
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -100,6 +104,14 @@ header {
     background-repeat: no-repeat;
     padding: 30px;
     z-index: 100;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.titulo-portada {
+    font-size: 16px;
+    color: #6ebd3d;
+
 }
 
 .portada-texto {
@@ -111,6 +123,8 @@ header {
     justify-content: space-between;
     gap: 24px;
     flex-wrap: wrap;
+   
+    
 }
 
 header nav a {
@@ -124,25 +138,43 @@ header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    gap: 22px;
+    gap: 1.6rem;
+    
 }
 
 nav li {
     margin-right: 15px;
     display: inline-block;
+    align-content: normal;
+    font-size: 9rem;
+    font-style: inherit;
 }
 
 nav a {
     color: #ffffff;
     margin-right: 15px;
     transition: color 0.3s;
+    max-width:70ch ;
+    text-transform: uppercase;
+    font-weight: 600;
+
 }
 
 /* Pseudo-clase :hover para navegación */
 nav a:hover {
     color: #f4680b;
+    background-color: #527a8a;
+    border-radius: .6rem;
+    padding: .5rem;
 }
 
+.menu-anclas {
+    display: inline-block;/*esta linea permite aplicar relleno vertical */
+    padding: 16px;
+    font-weight: 600;
+    border-radius: var(--radio);
+    transition: background-color  transition, color transition;
+}
 /*ESTRUCTURA DE CONTENIDO Y SECCIONES */
 section {
     margin-bottom: 32px;
@@ -271,7 +303,11 @@ figure {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 32px;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 70ch;
 }
+
 
 .galeria-grid section {
     display: flex;
@@ -312,18 +348,19 @@ figure {
 
 .menu-anclas {
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 /* Layout index usando grid-template-areas */
 .index-main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display:block;
     grid-template-areas:
         "cabecera cabecera"
         "lateral  contenido"
         "pie      pie";
     gap: 24px;
 }
+
 
 .index-main .menu-anclas { 
     grid-area: cabecera; 
