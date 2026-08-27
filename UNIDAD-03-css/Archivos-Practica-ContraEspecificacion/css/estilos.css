@@ -5,19 +5,22 @@
     box-sizing: border-box;
   }
 :root {
-    --color-primario: #4C1D95;
-    --color-acento: #EC4899;
+    --color-primario: #4b2780;
+    --color-acento: #f29393;
     --color-fondo: #FFF7ED;
     --color-texto: #292524;
     --color-blanco: #FFFFFF;
-    --linea:#dddd;
+    --linea:#bcb4b4dd;
     --suave:#6b7280;
 
-    --spa-sm: 1.6rem;
-    --spa-md:2.4rem;
-    --spa-lg:45rem;
-    --radio:0.6rem;
-    --sombra: 0 .4rem 1.2rem rgba(0, 0, 0, .1)
+  --esp-xs: 0.8rem;  --esp-sm: 1.6rem;  --esp-md: 2.4rem;
+  --esp-lg: 4.0rem;  --esp-xl: 7.2rem;
+  --radio: 0.6rem;
+  --sombra-1: 0 .2rem .6rem rgba(0,0,0,.06);
+  --sombra-2: 0 .4rem 1.2rem rgba(0,0,0,.10);
+  --sombra-3: 0 .8rem 2rem rgba(0,0,0,.16);
+  --trans: .25s ease;
+  --ancho: 112rem;
 }
 
   html {font-size: 62.5%;}
@@ -39,10 +42,128 @@ h1{ font-size: 4rem;}
 h2{ font-size: 3rem;}
 h3{ font-size: 2rem;}
 p { margin-bottom:1.6rem ;}
-a { color: var(--color-acento);
-    text-decoration: none;}
-img { max-width: 100%;
-  height: auto;
-  display: block;
+a { color: var(--color-primario);
+text-decoration: none;}
+abbr[title] { text-decoration: line-through; cursor: help;}
+.seccion {
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: var(--esp-xl) var(--esp-md);
 }
 
+.seccion-alterna { background: var(--color-acento); max-width: none; }
+.seccion-alterna > * { max-width: var(--ancho); margin-left: auto; margin-right: auto; }
+
+.seccion-titulo {
+  text-align: center;
+  margin-bottom: var(--esp-sm);
+}
+
+.seccion-entrada {
+  max-width: 62ch;
+  margin: 0 auto var(--esp-lg);
+  text-align: center;
+  color: var(--suave);
+}
+.subtitulo { margin: var(--esp-md) 0 var(--esp-xs); }
+
+.cabecera{
+display: flex;
+margin: 0 auto;
+max-width: var(--ancho);
+padding: var(--esp-sm) var(--esp-md);
+justify-content: space-between;
+align-items: center;
+background-color: var(--color-acento);
+border-bottom: .1rem solid var(--linea);
+position: sticky;
+top: 0;
+z-index: 100;
+flex-wrap: wrap;
+}
+.identidad{
+  align-items: center;
+  gap:var(--esp-xs);
+  display: flex;
+}
+
+.identidad-inicial{
+  
+}
+.identidad-nombre
+.navegacion{
+  
+}
+.menu{
+  text-decoration: none;
+}
+.menu-enlace
+/*presentacion*/
+.presentacion
+.presentacion-saludo
+.presentacion-titulo
+.presentacion-rol
+.presentacion-texto
+.boton
+.boton-principal
+.boton-secundario
+/*dos columas*/
+.seccion
+.seccion-titulo
+.dos-columnas
+.cita
+.cita-texto
+.cita-autoria
+.columna-lista
+.subtitulo
+.lista-servicios
+.subtitulo
+.glosario
+.glosario-termino
+.glosario-definicion
+/*tarjetas*/ 
+.seccion-alterna
+.seccion-titulo
+.seccion-entrada
+.rejilla-trabajos
+.trabajo
+.trabajo-etiqueta
+.trabajo-titulo
+.trabajo-texto
+.trabajo-anio
+/*tabla*/
+.seccion
+.seccion-titulo
+.tabla
+.tabla-titulo
+/*contacto-formulario*/
+.formulario
+.grupo
+.grupo-titulo
+.campo
+.campo-etiqueta
+.campo-entrada
+.grupo
+.grupo-titulo
+.grupo-opciones
+.opcion
+.opcion-marca
+.opcion-etiqueta
+.fila-botones
+.pie
+.pie-columnas
+.pie-bloque
+.pie-titulo
+.pie-texto
+.pie-datos
+.pie-enlace
+.pie-creditos
+
+/*id*/
+#cabecera
+#perfil
+#trabajos
+#trayectoria
+#contacto
+#tipo
+#pie
