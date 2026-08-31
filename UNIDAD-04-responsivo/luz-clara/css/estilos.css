@@ -397,3 +397,34 @@ img {
     font-style: italic;
 
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+caption {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.4rem;
+}
+th,td {
+    padding: 1.2rem;
+    border-bottom: .1rem solid var(--color-acento);
+    text-align: left;
+}
+thead th {
+    background: var(--color-marca);
+    color: var(--color-blanco);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+tbody tr:nth-child(even){
+    background: var(--color-linea);
+}
+tbody tr:hover {
+    background: var(--color-suave);
+}
+tfoot td {
+    background: var(--color-acento);
+    font-style: italic;
+    border-top: .2rem solid var(--color-marca);
+}
