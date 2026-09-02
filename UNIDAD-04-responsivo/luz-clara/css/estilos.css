@@ -1945,6 +1945,7 @@ img {
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
 
+
 /*Modalidad movil first*/
 @media (max-width: 768px) {
   .cabecera{
@@ -1968,6 +1969,27 @@ img {
   }
 }
 
+/*a partir de los 10224px-vista escritorio*/
+@media(min-width:1024px) {
+  h1 { font-size: 4.8rem;}/*h1 recupera tamaño original*/
 
+  .portada {min-height: 55rem;}/*una portada con 50px de alto ocupa casi toda la pantalla de un celular*/
 
+  .seccion {padding: var(--esp-lg) var(--esp-xl);}
+}
+
+/*  CUANTOS PUINTOS DE QUIEBRE HACEN FALTA
+Para Luz Clara basta con estos dos 
+base    hasta 767px    telefono
+768     tableta
+1024px  escritorio*/
+
+/*COMO SE ACUMULAN LAS REGLAS
+en una pantalla de 1200px se aplican las TRES REGLAS:
+1.base 1200px
+2. la de min-width:768px (1200 es mayor que 768)
+3. la de min-width : 1024px (1200 es mayor que 1024)
+Donde se repite una propiedad, gana la ultima.
+Por eso el orden importa: de menor a mayor.
+si la regla de 1024 estuviera antes de las reglas de 768, la ultima la anularia en pantallas grandes*/
 
