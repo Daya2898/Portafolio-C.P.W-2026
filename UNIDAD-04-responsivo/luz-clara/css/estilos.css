@@ -2032,3 +2032,32 @@ h3 {font-size: 1.8rem;}
   main p { max-width: 65ch;}
 }
 /*En movil no hace falta adaptar texto de los parrafos, la pantalla lo hace. la adaptaciín es para de tables hacia  arriba por comodidad de lectura */
+
+/*  CUANTOS PUINTOS DE QUIEBRE HACEN FALTA
+Para Luz Clara basta con estos dos 
+base    hasta 767px    telefono
+768     tableta
+1024px  escritorio*/
+
+/*TABLETA . A PÁRTIR DE 768PX
+@media (min-width:768) {
+cabecera e fila 
+titulos mas grandes mas relleno en las secciones}*/
+
+/*Escritorio . A PÁRTIR DE 1024pxPX
+@media (min-width:1024) {
+titulos a tamaño completo
+portada más alta
+}*/
+
+/*AJUSTE SOLO PARA PANTALLA PEQUEÑA
+@media (max-width:768) {
+celdas de la tabla mas compactas
+}*/
+
+/*ACCESIBILIDAD DEL MOVIMIENTO
+@media (prefer-reduce-motion:reduce) {
+Va siempre al final de todo. Desactivas las animaciones desde el SO del dispositivo en uso.}*/
+
+/*Estos encabezados NO son decorativos.
+  q uien habra esta hoja de estilos o usted mismo dentro de 6  meses sepa o tenga una idea de lo que se hizo y la estrategia que se uso */
