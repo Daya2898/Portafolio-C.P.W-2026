@@ -130,6 +130,12 @@ header nav a {
     text-decoration: none;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones bajen si no caben */
+  justify-content: center;
+  gap: 15px;
+}
 nav ul {
     list-style-type: none;
     display: flex;
@@ -454,6 +460,7 @@ footer {
         flex-direction: row;
         gap: 1.6rem;
     }
+    
 
     .layout-principal {
         display: grid;
