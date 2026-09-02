@@ -443,7 +443,7 @@ footer {
 
 /* ADAPTABILIDAD RESPONSIVE (MEDIA QUERIES) */
 
-/* Tablets y pantallas medianas (768px o más) */
+/* Tablets y pantallas medianas (768px) */
 @media (min-width: 768px) {
     body {
         padding-top: 14rem;
@@ -460,7 +460,6 @@ footer {
         flex-direction: row;
         gap: 1.6rem;
     }
-    
 
     .layout-principal {
         display: grid;
@@ -490,7 +489,6 @@ footer {
         text-align: left;
     }
 }
-
 /* Pantallas escritorio (1024px) */
 @media (min-width: 1024px) {
     .targeta2 {
