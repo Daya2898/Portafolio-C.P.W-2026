@@ -1993,3 +1993,42 @@ Donde se repite una propiedad, gana la ultima.
 Por eso el orden importa: de menor a mayor.
 si la regla de 1024 estuviera antes de las reglas de 768, la ultima la anularia en pantallas grandes*/
 
+/*LA ESCALA COMPLETA , POR TRAMOS*/
+/*BASE-TELEFONO*/
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+body{font-size: 1.6rem;}
+
+/*ESCALA TABLETS*/
+@media(min-width: 768px){
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+body{font-size: 1.6rem;}
+}
+
+/*ESCALA ESCRITORIO*/
+@media(min-width: 768px){
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+}
+
+/*LA TABLA DE contacto.html*/
+.tabla-envoltorio{ /*despues de los 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre los datos*/
+  overflow: auto;/*crea su propia barra de desplazamiento*/
+}
+
+@media (max-width: 768px) { /*se usa max en lugar de min porque en media query ataca la parte movil, e ajuste es solo para movil*/
+  .tabla th,
+  .tabla td {
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  main p { max-width: 65ch;}
+}
+/*En movil no hace falta adaptar texto de los parrafos, la pantalla lo hace. la adaptaciín es para de tables hacia  arriba por comodidad de lectura */
