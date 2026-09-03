@@ -2118,7 +2118,7 @@ Va siempre al final de todo. Desactivas las animaciones desde el SO del disposit
   .menu-boton:focus-within {
     outline: 0.2rem solid var(--color-acento);
     outline-offset: 0.2rem;
-    
+
   }
 
   .menu-enlace {
@@ -2126,5 +2126,16 @@ Va siempre al final de todo. Desactivas las animaciones desde el SO del disposit
     padding: var(--esp-xs) var(--esp-sm);
     border-bottom: none;
     border-radius: var(--radio);
+  }
+}
+
+@media (min-width:768px) { /* Aqui si corresponde el display none por que el boton no debe existir en pantalla grandes*/
+  .menu-boton {
+    display: none;
+
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
   }
 }
