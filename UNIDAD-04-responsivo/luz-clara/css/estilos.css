@@ -2139,3 +2139,24 @@ Va siempre al final de todo. Desactivas las animaciones desde el SO del disposit
     flex-direction: row;
   }
 }
+
+/*Usar orientación 
+Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
+@media (orientation: landscape) and (max-height: 500px) {
+  .portada {
+    min-height: 100vh;
+    padding: var(--esp-md);
+  }
+  .portada-titulo {font-size: 2.4rem;}
+  .portada-bajada {font-size: 1.5rem;}
+} 
+/*Las consultas disponibles
+@media (min-width: 768px)ancho minimo
+@media (min-width: 767px)ancho maximo
+@media (min-heigth: 600px)ancho minimo
+@media (orientation: portrait)vertical
+@media (orientation: landscape)horizontal
+@media print impresion de la página
+@media (prefers-reduced-motion)preferencia de movimiento
+@media (prefers-color-scheme: dark) tema oscuro
+*/
