@@ -117,8 +117,13 @@
 
         <!--  recursos/g-01.jpg · 1200 × 800 px · ocupa 2 columnas -->
         <figure class="pieza pieza-ancha">
+          <picture>
+            <source media="(min-width : 1024)" srcset="recursos/g01.jpg">
+            <source media="(min-width : 768)" srcset="recursos/g01mediana.jpg">
+            <source media="(min-width : 468)" srcset="recursos/g01pequena.jpg">
           <img src="recursos/g01.jpg" alt="Retrato de una mujer junto a una ventana con luz lateral"
                width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Luz de ventana</span>
             <span class="pieza-categoria">Retrato</span>
@@ -127,8 +132,11 @@
 
         <!--  recursos/g-02.jpg · 600 × 900 px · ocupa 2 filas -->
         <figure class="pieza pieza-alta">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g02pequena.jpg">
           <img src="recursos/g02.jpg" alt="Fotografía vertical de una botella de cerámica sobre madera"
                width="600" height="900" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Cerámica de Guaitil</span>
             <span class="pieza-categoria">Producto</span>
@@ -137,8 +145,11 @@
 
         <!--  recursos/g-03.jpg · 600 × 600 px -->
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g03pequena.jpg">
           <img src="recursos/g03.jpg" alt="Detalle de manos entrelazadas durante una ceremonia"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Ceremonia</span>
             <span class="pieza-categoria">Eventos</span>
@@ -147,8 +158,11 @@
 
         <!--  recursos/g-04.jpg · 600 × 600 px -->
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g05pequena.png">
           <img src="recursos/g04.jpg" alt="Retrato en blanco y negro de un hombre mayor sonriendo"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Don Rafael</span>
             <span class="pieza-categoria">Retrato</span>
@@ -161,7 +175,7 @@
             <source media="(min-width : 1024)" srcset="recursos/g05.jpg">
             <source media="(min-width : 768)" srcset="recursos/g05mediana.png">
             <source media="(min-width : 468)" srcset="recursos/g05pequena.png">
-          <img src="recursos/g05.jpg" alt="Vista general de un salón durante una celebración al atardecer"
+          <img src="recursos/g05pequena.png" alt="Vista general de un salón durante una celebración al atardecer"
                width="1200" height="1200" loading="lazy">
           </picture>
           <figcaption class="pieza-info">
@@ -172,8 +186,11 @@
 
         <!--  recursos/g-06.jpg · 600 × 600 px -->
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g06pequena.jpg">
           <img src="recursos/g06.jpg" alt="Taza de café sobre fondo neutro con sombra marcada"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Serie café</span>
             <span class="pieza-categoria">Producto</span>
@@ -182,8 +199,13 @@
 
         <!--  recursos/g-07.jpg · 1200 × 800 px · ocupa 2 columnas -->
         <figure class="pieza pieza-ancha">
+          <picture>
+            <source media="(min-width : 1024)" srcset="recursos/g07.jpg">
+            <source media="(min-width : 768)" srcset="recursos/g07mediana.jpg">
+            <source media="(min-width : 468)" srcset="recursos/g07pequena.jpg">
           <img src="recursos/g07.jpg" alt="Grupo de personas conversando durante un evento corporativo"
                width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Encuentro anual</span>
             <span class="pieza-categoria">Eventos</span>
@@ -192,8 +214,11 @@
 
         <!--  recursos/g-08.jpg · 600 × 900 px · ocupa 2 filas -->
         <figure class="pieza pieza-alta">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g08pequena.jpg">
           <img src="recursos/g08.jpg" alt="Retrato de cuerpo entero de una bailarina en el estudio"
                width="600" height="900" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Estudio de movimiento</span>
             <span class="pieza-categoria">Retrato</span>
@@ -202,8 +227,11 @@
 
         <!--  recursos/g-09.jpg · 600 × 600 px -->
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g09pequena.jpg">
           <img src="recursos/g09.jpg" alt="Conjunto de joyas artesanales sobre tela oscura"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Joyería artesanal</span>
             <span class="pieza-categoria">Producto</span>
@@ -212,8 +240,11 @@
 
         <!--  recursos/g-10.jpg · 600 × 600 px -->
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g10pequena.jpg">
           <img src="recursos/g10.jpg" alt="Niña riendo durante una sesión familiar en exteriores"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Sesión familiar</span>
             <span class="pieza-categoria">Retrato</span>
@@ -233,29 +264,43 @@
 
       <div class="rejilla-categoria">
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 1024)" srcset="recursos/g1.jpg">
+            <source media="(min-width : 768)" srcset="recursos/g1mediana.jpg">
+            <source media="(min-width : 468)" srcset="recursos/g1pequena.jpg">
           <img src="recursos/g1.jpg" alt="Retrato con luz de ventana"
                width="1200" height="800" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Luz de ventana</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g4pequena.jpg">
           <img src="recursos/g4.jpg" alt="Retrato en blanco y negro"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Don Rafael</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g08pequena.jpg">
           <img src="recursos/g08.jpg" alt="Retrato de una bailarina"
                width="600" height="900" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Estudio de movimiento</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g10pequena..jpg">
           <img src="recursos/g10..jpg" alt="Sesión familiar en exteriores"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Sesión familiar</span>
           </figcaption>
@@ -271,22 +316,31 @@
 
       <div class="rejilla-categoria">
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g2pequena.jpg">
           <img src="recursos/g2.jpg" alt="Botella de cerámica"
                width="600" height="900" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Cerámica de Guaitil</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursoS/g6pequena.jpg">
           <img src="recursos/g6.jpg" alt="Taza de café"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Serie café</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g9pequena.jpg">
           <img src="recursos/g9.jpg" alt="Joyas artesanales"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Joyería artesanal</span>
           </figcaption>
@@ -302,20 +356,32 @@
 
       <div class="rejilla-categoria">
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 468)" srcset="recursos/g3pequena.jpg">
           <img src="recursos/g3.jpg" alt="Detalle de una ceremonia"
                width="600" height="600" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Ceremonia</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 1024)" srcset="recursos/g5.jpg">
+            <source media="(min-width : 768)" srcset="recursos/g5mediana.jpg">
+            <source media="(min-width : 468)" srcset="recursos/g5pequena.jpg">
           <img src="recursos/g5.jpg" alt="Salón durante una celebración"
                width="1200" height="1200" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Atardecer en Santa Ana</span>
           </figcaption>
         </figure>
         <figure class="pieza">
+          <picture>
+            <source media="(min-width : 1024)" srcset="recursos/g7.jpg">
+            <source media="(min-width : 768)" srcset="recursos/g7mediano.jpg">
+            <source media="(min-width : 468)" srcset="recursos/g7pequeno.jpg">
           <img src="recursos/g7.jpg" alt="Evento corporativo"
                width="1200" height="800" loading="lazy">
           <figcaption class="pieza-info">
