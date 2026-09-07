@@ -15,23 +15,28 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="contenedor"> 
-        <header id="inicio" class="portada-texto">
+
+  
+    <header id="inicio">
+        <div class="cabecera">
             <div class="titulo-portada">
                 <h1>Echoes of time</h1>
                 <p>Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
             </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html" class="menu-activo">Inicio</a></li>
-                <li><a href="listas.html">Horarios y Técnicas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="menu-activo">Inicio</a></li>
+                    <li><a href="listas.html">Horarios y Técnicas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenedor"> 
         <main id="contenido" class="index-main">
             <div class="menu-anclas">
                 <h2>En esta página</h2>
@@ -85,7 +90,7 @@
                         <p>
                             "Dibujar es luchar por atravesar un invisible muro de hierro que parece alzarse entre lo que sientes y lo que eres capaz de hacer."
                         </p>
-                        <footer>
+                        <footer class="cita-autor">
                             - Cartas a Theo, <cite>Vincent van Gogh</cite>
                         </footer>
                     </blockquote>
@@ -111,7 +116,7 @@
                 </section>
             </article>
             
-             <aside>
+            <aside>
                 <h3>Glosario de materiales</h3>
                 <p>
                     Para lograr los acabados mostrados en la bitácora, se recomienda
@@ -127,22 +132,27 @@
                 <a href="#inicio">Volver al inicio</a>
             </p>
         </main>
+    </div> 
 
-        <footer>
+     
+    <footer>
+        <div class="pie-pagina">
             <address>
                 <p><strong><em>Echoes of Time</em></strong></p>
                 <p>Teléfono: +506 1234 5678</p>
                 <p>email: <a href="mailto:contacto@EchoesofTime.com">contacto@EchoesofTime.com</a></p>
             </address>
 
-            <p>
-                Sitio externo:
+            <p class="sitio-externo">
+                Sitio externo:<br>
                 <a href="https://arteacr.com/" target="_blank" rel="noopener">arteacr.com</a>
             </p>
 
-            <p><small>&copy; 2025 Echoes of Time. <abbr title="Echoes of Time"><strong>Echoes of Time</strong></abbr> Todos los derechos reservados.</small></p>
-            <p><small>@DayannaSanchez</small></p>
-        </footer>
-    </div>
+            <div class="copyright">
+                <p><small>&copy; 2025 Echoes of Time. <strong>Echoes of Time</strong>. Todos los derechos reservados.</small></p>
+                <p><small>@DayannaSanchez</small></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
