@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="90" fill="#CD7F32"></circle>
+                    <circle cx="100" cy="100" r="75" fill="#FAF5E9" stroke="#5D4037" stroke-width="4"></circle>
+                    <rect x="70" y="60" width="60" height="6" rx="3" fill="#5D4037"></rect>
+                <rect x="70" y="134" width="60" height="6" rx="3" fill="#5D4037"></rect>
+                <path d="M80,66 C80,66 80,90 100,100 C120,110 120,134 120,134 
+                         M120,66 C120,66 120,90 100,100 C80,110 80,134 80,134
+                         M100,100 C110,110 130,110 140,100 C150,90 140,80 130,80 C120,80 110,90 100,100
+                         M100,100 C90,90 70,90 60,100 C50,110 60,120 70,120 C80,120 90,110 100,100" fill="none" stroke="#D4AF37" stroke-width="5" stroke-linecap="round"></path>
+                      <circle cx="100" cy="103" r="3" fill="#D4AF37">
+                    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"></animate>
+                </circle>
+                <text x="100" y="50" text-anchor="middle" font-size="8" font-family="Verdana, sans-serif" font-weight="bold" fill="#5D4037">
+                    ECHOES OF TIME
+                </text> 
+            </svg>
