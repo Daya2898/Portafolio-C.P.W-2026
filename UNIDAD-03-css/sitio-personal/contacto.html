@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dayanna Sanchez" />
+    <meta name="author" content="Dayanna sanchez" />
     <meta name="description" content="Formulario de registro y contacto para talleres y encargos de ilustraciones en Echoes of Time."/>
-    <meta name="keywords" content="contacto, registro, talleres, ilustraciones, arte, Echoes of Time"/>
+    <meta name="keywords" content="contacto, registro, talleres, ilustraciones,arte, Echoes of Time"/>
 
     <title>Contacto y Registro | Echoes of time</title>
     <link rel="icon" href="recursos/favicon.png" type="image/png" />
@@ -15,177 +15,157 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <div class="contenedor"> 
+        <header id="inicio" class="portada-texto">
+            <div class="titulo-portada">
+                <h1>Contacto y Registro</h1>
+                <p>Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
+            </div>
 
-    <header id="cabecera" class="cabecera">
-        <div class="logo">
-            <h1 class="logo-texto">Contacto y Registro</h1>
-            <p class="portada-bajada">Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
-        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="listas.html">Horarios y Técnicas</a></li>
+                    <li><a href="contacto.html" class="menu-activo">Contacto</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav class="navegacion" aria-label="Navegación principal">
-            <ul class="menu">
-                <li><a href="index.html" class="menu-enlace">Inicio</a></li>
-                <li><a href="listas.html" class="menu-enlace">Horarios y Técnicas</a></li>
-                <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
-                <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
-            </ul>
-        </nav>
-    </header>
+        <main id="contenido">
+            <article>
+                <h2>Formulario de inscripción y encargos</h2>
+                <p>Por favor, complete el siguiente formulario para registrarse en nuestros talleres o para solicitar un encargo de ilustración. Los campos marcados con un asterisco (*) son obligatorios.</p>
+            </article>
 
-    <main id="contenido">
-        <article class="articulo-principal">
-            <h2 class="seccion-titulo">Formulario de inscripción y encargos</h2>
-            <p class="seccion-entrada">Por favor, complete el siguiente formulario para registrarse en nuestros talleres o para solicitar un encargo de ilustración. Los campos marcados con un asterisco (*) son obligatorios.</p>
-        </article>
-
-        <form action="#" method="post" class="formulario-contacto">
-            
-            <fieldset class="seccion-formulario">
-                <legend class="tarjeta-titulo">Información Personal</legend>
-                
-                <p class="campo-grupo">
-                    <label for="nombre" class="campo-etiqueta">Nombre completo*:</label>
-                    <input type="text" id="nombre" name="nombre" class="campo-entrada" required minlength="3" maxlength="60" placeholder="Ingrese su nombre completo">
-                </p>
-
-                <p class="campo-grupo">
-                    <label for="email" class="campo-etiqueta">Correo electrónico*:</label>
-                    <input type="email" id="email" name="email" class="campo-entrada" required placeholder="Ingrese su correo electrónico">
-                </p>
-
-                <p class="campo-grupo">
-                    <label for="telefono" class="campo-etiqueta">Número de teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" class="campo-entrada" pattern="[0-9]{8}" title="Debe ingresar 8 dígitos, sin guiones ni espacios" placeholder="Ingrese su número de teléfono">
-                </p>
-
-                <p class="campo-grupo">
-                    <label for="clave" class="campo-etiqueta">Contraseña*:</label>
-                    <input type="password" id="clave" name="clave" class="campo-entrada" required minlength="8">
-                    <small class="campo-ayuda">Mínimo ocho caracteres.</small>
-                </p>
-            </fieldset>
-
-            <fieldset class="seccion-formulario">
-                <legend class="tarjeta-titulo">Detalles de la solicitud</legend>
-                
-                <p class="campo-grupo">
-                    <label for="fecha" class="campo-etiqueta">Fecha estimada de entrega:</label>
-                    <input type="date" id="fecha" name="fecha" class="campo-entrada" required>
-                </p>
-                
-                <p class="campo-grupo">
-                    <label for="piezas" class="campo-etiqueta">Cantidad de obras solicitadas*:</label>
-                    <input type="number" id="piezas" name="piezas" class="campo-entrada" required min="1" max="20" step="1" value="1">
-                    <small class="campo-ayuda">Elija entre 1 y 20 piezas por solicitud.</small>
-                </p>
-
-                <p class="campo-grupo">
-                    <label for="tecnica" class="campo-etiqueta">Técnica artística preferida:</label>
-                    <select id="tecnica" name="tecnica" class="campo-seleccion">
-                        <option value="opcion">Seleccione una opción</option>
-                        <option value="acuarela">Acuarela sobre papel de algodón</option>
-                        <option value="grafito">Dibujo a lápiz de grafito</option>
-                        <option value="tinta">Entintado y línea fina (Lineart)</option>
-                        <option value="digital">Ilustración digital de alta resolución</option>
-                    </select>
-                </p>
-                
-                <fieldset class="opciones-grupo">
-                    <legend class="opciones-titulo">Tipo de encargo</legend>
-                    <p class="opcion-item">
-                        <input type="radio" id="original" name="tipo_encargo" value="original" required>
-                        <label for="original">Pieza original física</label>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <p>
+                        <label for="nombre">Nombre completo*:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="Ingrese su nombre completo">
                     </p>
 
-                    <p class="opcion-item">
-                        <input type="radio" id="digital_copia" name="tipo_encargo" value="digital">
-                        <label for="digital_copia">Licencia de reproducción digital</label>
+                    <p>
+                        <label for="email">Correo electrónico*:</label>
+                        <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
                     </p>
 
-                    <p class="opcion-item">
-                        <input type="radio" id="taller" name="tipo_encargo" value="taller">
-                        <label for="taller">Inscripción a taller presencial</label>
+                    <p>
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Debe ingresar 8 dígitos, sin guiones ni espacios" placeholder="Ingrese su número de teléfono">
+                    </p>
+
+                    <p>
+                        <label for="clave">Contraseña*:</label>
+                        <input type="password" id="clave" name="clave" required minlength="8">
+                        <small>Mínimo ocho caracteres.</small>
                     </p>
                 </fieldset>
 
-                <fieldset class="opciones-grupo">
-                    <legend class="opciones-titulo">Servicios adicionales</legend>
-                    <p class="opcion-item">
-                        <input type="checkbox" id="enmarcado" name="servicios" value="enmarcado">
-                        <label for="enmarcado">Enmarcado artesanal de la obra</label>
+                <fieldset>
+                    <legend>Detalles de la solicitud</legend>
+                    <p>
+                        <label for="fecha">Fecha estimada de entrega:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    
+                    <p>
+                        <label for="piezas">Cantidad de obras solicitadas*:</label>
+                        <input type="number" id="piezas" name="piezas" required min="1" max="20" step="1" value="1">
+                        <small>Elija entre 1 y 20 piezas por solicitud.</small>
                     </p>
 
-                    <p class="opcion-item">
-                        <input type="checkbox" id="certificado" name="servicios" value="certificado">
-                        <label for="certificado">Certificado de autenticidad firmado</label>
+                    <p>
+                        <label for="tecnica">Técnica artística preferida:</label>
+                        <select id="tecnica" name="tecnica">
+                            <option value="opcion">Seleccione una opción</option>
+                            <option value="acuarela">Acuarela sobre papel de algodón</option>
+                            <option value="grafito">Dibujo a lápiz de grafico</option>
+                            <option value="tinta">Entintado y línea fina(Lineart)</option>
+                            <option value="digital">Ilustración digital de alta resolución</option>
+                        </select>
                     </p>
+                    
+                    <fieldset>
+                        <legend>Tipo de encargo</legend>
+                        <p>
+                            <input type="radio" id="original" name="tipo_encargo" value="original" required>
+                            <label for="original">Pieza original física</label>
+                        </p>
 
-                    <p class="opcion-item">
-                        <input type="checkbox" id="envio" name="servicios" value="envio">
-                        <label for="envio">Envío seguro a domicilio</label>
+                        <p>
+                            <input type="radio" id="digital_copia" name="tipo_encargo" value="digital">
+                            <label for="digital_copia">Licencia de reproducción digital</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" id="taller" name="tipo_encargo" value="taller">
+                            <label for="taller">Inscripción a taller presencial</label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Servicios adicionales</legend>
+                        <p>
+                            <input type="checkbox" id="enmarcado" name="servicios" value="enmarcado">
+                            <label for="enmarcado">Enmarcado artesanal de la obra</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="certificado" name="servicios" value="certificado">
+                            <label for="certificado">Certificado de autenticidad firmado</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="envio" name="servicios" value="envio">
+                            <label for="envio">Envío seguro a domicilio</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="mensaje">Detalles o descripción del proyecto</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Describe la idea, colores sugeridos o concepto general..."></textarea>
+                        <small>Múltiples caracteres permitidos.</small>
                     </p>
                 </fieldset>
 
-                <p class="campo-grupo">
-                    <label for="mensaje" class="campo-etiqueta">Detalles o descripción del proyecto</label>
-                    <textarea id="mensaje" name="mensaje" class="campo-texto" rows="4" cols="50" placeholder="Describe la idea, colores sugeridos o concepto general..."></textarea>
-                    <small class="campo-ayuda">Múltiples caracteres permitidos.</small>
+                <fieldset>
+                    <legend>Confirmación</legend>
+                    <p>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Acepto los términos de servicio y el envío de notificaciones sobre mi pedido.</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar solicitud</button>
+                    <button type="reset">Restablecer formulario</button>
                 </p>
-            </fieldset>
+            </form>
 
-            <fieldset class="seccion-formulario">
-                <legend class="tarjeta-titulo">Confirmación</legend>
-                <p class="opcion-item">
-                    <input type="checkbox" id="acepto" name="acepto" required>
-                    <label for="acepto">Acepto los términos de servicio y el envío de notificaciones sobre mi pedido.</label>
-                </p>
-            </fieldset>
+            <aside>
+                <h3>Información de contacto</h3>
+                <p>Para revisar los tiempos promedio de realización según la técnica, consulte nuestros <a href="listas.html">horarios y técnicas</a>.</p>
+            </aside>
 
-            <div class="acciones-formulario">
-                <button type="submit" class="boton boton-principal">Enviar solicitud</button>
-                <button type="reset" class="boton boton-secundario">Restablecer formulario</button>
-            </div>
-        </form>
+            <p><a href="#inicio">Volver al inicio</a></p>
+        </main>
 
-        <aside class="bloque-lateral">
-            <h3 class="tarjeta-titulo">Información de contacto</h3>
-            <p class="seccion-texto">Para revisar los tiempos promedio de realización según la técnica, consulte nuestros <a href="listas.html" class="pie-enlace">horarios y técnicas</a>.</p>
-        </aside>
+        <footer>
+            <address>
+                <p><strong><em>Echoes of Time</em></strong></p>
+                <p>Teléfono: +506 1234 5678</p>
+                <p>email: <a href="mailto:contacto@EchoesofTime.com">contacto@EchoesofTime.com</a></p>
+            </address>
 
-        <p class="volver-inicio">
-            <a href="#cabecera" class="boton-subir">Volver al inicio</a>
-        </p>
-    </main>
+            <p>
+                Sitio externo:
+                <a href="https://arteacr.com/" target="_blank" rel="noopener">arteacr.com</a>
+            </p>
 
-    <footer id="pie" class="pie">
-        <div class="pie-columnas">
-
-            <div class="pie-bloque">
-                <h2 class="pie-titulo">Echoes of Time</h2>
-                <p class="pie-texto">Un viaje ilustrado a través del tiempo.</p>
-            </div>
-
-            <div class="pie-bloque">
-                <h2 class="pie-titulo">Contacto</h2>
-                <address class="pie-datos">
-                    Teléfono: +506 1234 5678<br>
-                    Email: <a href="mailto:contacto@EchoesofTime.com" class="pie-enlace">contacto@EchoesofTime.com</a>
-                </address>
-            </div>
-
-            <div class="pie-bloque">
-                <h2 class="pie-titulo">Sitio externo</h2>
-                <p class="pie-texto">
-                    Visita: <a href="https://arteacr.com/" target="_blank" rel="noopener" class="pie-enlace">arteacr.com</a>
-                </p>
-            </div>
-
-        </div>
-
-        <p class="pie-creditos">
-            <small>&copy; 2026 Echoes of Time. Todos los derechos reservados. | @DayannaSanchez</small>
-        </p>
-    </footer>
-
+            <p><small>&copy; 2025 Echoes of Time. <abbr title="Echoes of Time"><strong>Echoes of Time</strong></abbr> Todos los derechos reservados.</small></p>
+            <p><small>@DayannaSanchez</small></p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -15,148 +15,134 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
-        <header id="cabecera" class="cabecera">
-            <div class="logo">
-                <h1 class="titulo">Echoes of time</h1>
-                <p class="portada">Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
+    <div class="contenedor"> 
+        <header id="inicio" class="portada-texto">
+            <div class="titulo-portada">
+                <h1>Echoes of time</h1>
+                <p>Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
             </div>
 
-       <nav class="navegacion" aria-label="Navegación principal">
-            <ul class="menu">
-                <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
-                <li><a href="listas.html" class="menu-enlace">Horarios y Técnicas</a></li>
-                <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
-                <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menu-activo">Inicio</a></li>
+                <li><a href="listas.html">Horarios y Técnicas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html">Galería</a></li>
             </ul>
         </nav>
     </header>
 
-        <main id="contenido" >
-            <nav class="menu-anclas" aria-label="Navegación de la página">
-            <h2 class="seccion-titulo">En esta página</h2>
-            <ul class="lista-anclas">
-                <li><a href="#tradicional" class="ancla-enlace">1. Técnicas tradicionales de dibujo</a></li>
-                <li><a href="#digital" class="ancla-enlace">2. Entorno digital</a></li>
-                <li><a href="#organizacion" class="ancla-enlace">3. Organización del tiempo</a></li>
-            </ul>
-            </nav>
+        <main id="contenido" class="index-main">
+            <div class="menu-anclas">
+                <h2>En esta página</h2>
+                <ul>
+                    <li><a href="#tradicional">1. Técnicas tradicionales de dibujo</a></li>
+                    <li><a href="#digital">2. Entorno digital</a></li>
+                    <li><a href="#organizacion">3. Organización del tiempo</a></li>
+                </ul>
+            </div>
 
-            <article class="articulo-principal">
-            <h2 class="seccion-titulo">Bitácora de Métodos y Proceso Creativo</h2>
+            <article>
+                <h2>Bitácora de Métodos y Proceso Creativo</h2>
 
-            <section id="tradicional" class="seccion">
-                <h3 class="tarjeta-titulo">1. Técnicas Tradicionales de Ilustración</h3>
-                <p class="destacado">
-                    El trabajo en medios <strong>tradicionales</strong> me permite un
-                    contacto directo con el papel y la textura <q>orgánica</q> de los
-                    materiales. La fase primera se desarrolla principalmente mediante
-                    lápices de grafito de distintas graduaciones (desde tonos duros para
-                    bocetar hasta sombras intensas con lápices blandos), lo que aporta
-                    un acabado lleno de matices y profundidad táctil.
-                </p>
-                <p class="seccion-texto">
-                    Posteriormente, aplico tintas chinas y veladuras de acuarela para
-                    definir las áreas de mayor contraste. Este procedimiento requiere
-                    gran precisión, ya que cada trazo sobre el papel es definitivo,
-                    obligándome a planificar la iluminación y el equilibrio visual de la
-                    pieza desde los primeros minutos de ejecución.
-                </p>
-            </section>
-
-            <section id="digital" class="seccion">
-                <h3 class="tarjeta-titulo">2. Flujo de Trabajo y Entorno Digital</h3>
-                <p class="seccion-texto">
-                    La integración del <strong>entorno digital</strong> me brinda la
-                    flexibilidad necesaria para llevar los bocetos hechos a mano hacia
-                    un nivel de detalle más complejo. Utilizando tabletas gráficas y
-                    software de pintura digital, puedo separar la ilustración en capas
-                    para ajustar de forma independiente el color, los efectos de luz
-                    atmosférica y los fondos.
-                </p>
-                <p class="seccion-texto">
-                    Este flujo mixto combina lo mejor de ambos mundos: preserva la
-                    calidez del trazo <em>analógico tradicional</em> mientras aprovecha
-                    herramientas modernas para el renderizado final. Gracias a ello, es
-                    posible adaptar cada obra a diferentes formatos de alta resolución
-                    para su posterior impresión o publicación.
-                </p>
-                <blockquote class="cita" cite="https://vggallery.com/visitors/major/pareja/18.html">
-                    <p class="cita-texto">
-                        "Dibujar es luchar por atravesar un invisible muro de hierro que parece alzarse entre lo que sientes y lo que eres capaz de hacer."
+                <section id="tradicional">
+                    <h3>1. Técnicas Tradicionales de Ilustración</h3>
+                    <p class="destacado">
+                        El trabajo en medios <strong>tradicionales</strong> me permite un
+                        contacto directo con el papel y la textura <q>orgánica</q> de los
+                        materiales. La fase primera se desarrolla principalmente mediante
+                        lápices de grafito de distintas graduaciones (desde tonos duros para
+                        bocetar hasta sombras intensas con lápices blandos), lo que aporta
+                        un acabado lleno de matices y profundidad táctil.
                     </p>
-                    <footer class="cita-autoria">
-                        - Cartas a Theo, <cite>Vincent van Gogh</cite>
-                    </footer>
-                </blockquote>
-            </section>
+                    <p>
+                        Posteriormente, aplico tintas chinas y veladuras de acuarela para
+                        definir las áreas de mayor contraste. Este procedimiento requiere
+                        gran precisión, ya que cada trazo sobre el papel es definitivo,
+                        obligándome a planificar la iluminación y el equilibrio visual de la
+                        pieza desde los primeros minutos de ejecución.
+                    </p>
+                </section>
 
-            <section id="organizacion" class="seccion">
-                <h3 class="tarjeta-titulo">3. Organización del tiempo y Etapas de producción</h3>
-                <p class="seccion-texto">
-                    Cada obra pasa por tres etapas fundamentales de producción:
-                    conceptualización e investigación histórica, desarrollo del lineart
-                    o dibujo de línea, y finalmente la aplicación de paletas de color.
-                    Mantener un orden riguroso en cada fase asegura que el mensaje y la
-                    temática de la pieza se mantengan coherentes.
-                </p>
-                <p class="seccion-texto">
-                    La duración de este proceso puede variar
-                    <em>significativamente</em> según el nivel de detalle requerido.
-                    Mientras que un estudio conceptual puede terminarse en unas pocas
-                    horas, una escena compleja con múltiples personajes y fondos
-                    detallados suele requerir entre dos y tres semanas de trabajo
-                    continuo.
-                </p>
-            </section>
-        </article>
+                <section id="digital">
+                    <h3>2. Flujo de Trabajo y Entorno Digital</h3>
+                    <p>
+                        La integración del <strong>entorno digital</strong> me brinda la
+                        flexibilidad necesaria para llevar los bocetos hechos a mano hacia
+                        un nivel de detalle más complejo. Utilizando tabletas gráficas y
+                        software de pintura digital, puedo separar la ilustración en capas
+                        para ajustar de forma independiente el color, los efectos de luz
+                        atmosférica y los fondos.
+                    </p>
+                    <p>
+                        Este flujo mixto combina lo mejor de ambos mundos: preserva la
+                        calidez del trazo <em>analógico tradicional</em> mientras aprovecha
+                        herramientas modernas para el renderizado final. Gracias a ello, es
+                        posible adaptar cada obra a diferentes formatos de alta resolución
+                        para su posterior impresión o publicación.
+                    </p>
+                    <blockquote cite="https://vggallery.com/visitors/major/pareja/18.html">
+                        <p>
+                            "Dibujar es luchar por atravesar un invisible muro de hierro que parece alzarse entre lo que sientes y lo que eres capaz de hacer."
+                        </p>
+                        <footer>
+                            - Cartas a Theo, <cite>Vincent van Gogh</cite>
+                        </footer>
+                    </blockquote>
+                </section>
 
-        <aside class="bloque-lateral">
-            <h3 class="tarjeta-titulo">Glosario de materiales</h3>
-            <p class="seccion-texto">
-                Para lograr los acabados mostrados en la bitácora, se recomienda
-                utilizar papel de algodón de 300g/m² para acuarelas, graduaciones de
-                lápiz HB, 2B y 6B, e ilustrar digitalmente con una resolución mínima
-                de 300 <abbr title="Dots Per Inch (puntos por pulgada)">DPI</abbr>.
-                Puedes ver más detalles en la sección de
-                <a href="galeria.html" class="pie-enlace">Galería.</a>
+                <section id="organizacion">
+                    <h3>3. Organización del tiempo y Etapas de producción</h3>
+                    <p>
+                        Cada obra pasa por tres etapas fundamentales de producción:
+                        conceptualización e investigación histórica, desarrollo del lineart
+                        o dibujo de línea, y finalmente la aplicación de paletas de color.
+                        Mantener un orden riguroso en cada fase asegura que el mensaje y la
+                        temática de la pieza se mantengan coherentes.
+                    </p>
+                    <p>
+                        La duración de este proceso puede variar
+                        <em>significativamente</em> según el nivel de detalle requerido.
+                        Mientras que un estudio conceptual puede terminarse en unas pocas
+                        horas, una escena compleja con múltiples personajes y fondos
+                        detallados suele requerir entre dos y tres semanas de trabajo
+                        continuo.
+                    </p>
+                </section>
+            </article>
+            
+             <aside>
+                <h3>Glosario de materiales</h3>
+                <p>
+                    Para lograr los acabados mostrados en la bitácora, se recomienda
+                    utilizar papel de algodón de 300g/m² para acuarelas, graduaciones de
+                    lápiz HB, 2B y 6B, e ilustrar digitalmente con una resolución mínima
+                    de 300 <abbr title="Dots Per Inch (puntos por pulgada)">DPI</abbr>.
+                    Puedes ver más detalles en la sección de
+                    <a href="galeria.html">Galería.</a>
+                </p>
+            </aside>
+
+            <p class="pie-contenido">
+                <a href="#inicio">Volver al inicio</a>
             </p>
-        </aside>
+        </main>
 
-        <p class="volver-inicio">
-            <a href="#cabecera" class="boton-subir">Volver al inicio</a>
-        </p>
-    </main>
+        <footer>
+            <address>
+                <p><strong><em>Echoes of Time</em></strong></p>
+                <p>Teléfono: +506 1234 5678</p>
+                <p>email: <a href="mailto:contacto@EchoesofTime.com">contacto@EchoesofTime.com</a></p>
+            </address>
 
-    <footer id="pie" class="pie">
-        <div class="pie-columnas">
+            <p>
+                Sitio externo:
+                <a href="https://arteacr.com/" target="_blank" rel="noopener">arteacr.com</a>
+            </p>
 
-            <div class="pie-bloque">
-                <h2 class="pie-titulo">Echoes of Time</h2>
-                <p class="pie-texto">Un viaje ilustrado a través del tiempo.</p>
-            </div>
-
-            <div class="pie-bloque">
-                <h2 class="pie-titulo">Contacto</h2>
-                <address class="pie-datos">
-                    Teléfono: +506 1234 5678<br>
-                    Email: <a href="mailto:contacto@EchoesofTime.com" class="pie-enlace">contacto@EchoesofTime.com</a>
-                </address>
-            </div>
-
-            <div class="pie-bloque">
-                <h2 class="pie-titulo">Sitio externo</h2>
-                <p class="pie-texto">
-                    Visita: <a href="https://arteacr.com/" target="_blank" rel="noopener" class="pie-enlace">arteacr.com</a>
-                </p>
-            </div>
-
-        </div>
-
-        <p class="pie-creditos">
-            <small>&copy; 2026 Echoes of Time. Todos los derechos reservados. | @DayannaSanchez</small>
-        </p>
-    </footer>
-
+            <p><small>&copy; 2025 Echoes of Time. <abbr title="Echoes of Time"><strong>Echoes of Time</strong></abbr> Todos los derechos reservados.</small></p>
+            <p><small>@DayannaSanchez</small></p>
+        </footer>
+    </div>
 </body>
 </html>
