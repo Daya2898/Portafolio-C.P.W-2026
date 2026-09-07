@@ -589,7 +589,37 @@ img {
   font-size: 1.8rem;
   margin-bottom: var(--esp-md);
 }
+.video-envoltorio {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
 
+  aspect-ratio: 16 / 9;
+  /* Mantiene la proporción sin importar el ancho de la pantalla.
+     La altura se calcula sola a partir del ancho disponible.
+     Antes de que existiera esta propiedad, conseguirlo requería un
+     truco con relleno en porcentaje que costaba explicar.            */
+
+  background-color: var(--color-tinta);
+  /* Color de respaldo mientras el video carga. Sin esto se ve un
+     hueco transparente que parece un error.                          */
+
+  border-radius: var(--radio);
+  overflow: hidden;
+  /* Recorta las esquinas del video para que sigan el redondeado del
+     envoltorio.                                                      */
+
+  box-shadow: var(--sombra-2);
+}
+
+.video-envoltorio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Igual que con las imágenes: RECORTA en vez de DEFORMAR si la
+     proporción del archivo no coincide con la del envoltorio.        */
+  display: block;
+}
 
 /* 6 · SERVICIOS · FLEXBOX           tema de la S16
 
@@ -1357,6 +1387,23 @@ img {
   opacity: 0.7;
   margin-bottom: 0;
 }
+
+
+/*LOS CINCO PATRONES.
+SON LAS CINCO FORMAS EN QUE UN DISEÑO PUEDE REORGANIZARSE AL CAMBIAR EL ANCHO PRINCIPALMENTE.
+1.MOSTLY FLUID. UNA REJILLA QUE SE ENCOGE Y , AL LLEGAR AL MINIMO SUS ELEMENTOS BAJAN DE LINEA. 
+EN PANTALLA GRANDE SE DETIENE Y SE CENTRA.
+
+2.COLUMN DROP. COLUMNAS QUE SE APILAN UNA DEBAJO DE LA OTRA AL ANGOSTAR. LO HACE FLEX-WRAP: WRAP
+3.LAYOUT SHIFTER. LAS ZONAS DE POSICIÓN, NO SOLO DE TAMAÑO. SE RESUEKVE CON GRID.
+4.TINY TWEAKS. SOLO AJUSTAN TAMAÑOS Y ESPACIOS, LA DISPOSICIÓN NO CAMBIA, SOLO PARA CONTENIDO DE UNA SOLA COLUMNA
+5.OFF CANVAS. CONTENIDO QUE VIVE FUERA DE LA PANTALLA Y ENTRA AL PEDIRLO.(POR EJEMPLO EN EL MENU HAMBURGUEZA.)*/
+
+
+
+
+
+
 
 
 /* 16 · MOVIMIENTO           tema de la S19
@@ -2159,7 +2206,16 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   }
   .portada-titulo { font-size: 2.4rem;}
   .portada-bajada { font-size: 1.5rem;}
-} 
+}
+/*Ajuste de pantalla pequeña de video*/ 
+@media (max-width: 767px) {
+  .video-envoltorio {
+    border-radius: 0;
+    /* En un teléfono el video ocupa casi todo el ancho: las esquinas
+       redondeadas dejan franjas del fondo que se ven como un error
+       de encuadre.                                                   */
+  }
+}
 
 /*LAS CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
@@ -2171,6 +2227,7 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
 @media (prefers-reduced-motion) preferencia de movimeinto
 @media (prefers-color-scheme: dark) tema oscuro
 */
+
 @media print {
   /*QUITAR LO QUE NO SIRVE EN EL  PAPEL*/
   .cabecera,
@@ -2195,7 +2252,6 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
     max-width: none;
   }
 
-
 .tarjeta,
 .ficha,
 figure,
@@ -2213,4 +2269,13 @@ main a [href^="http"]::after{
   font-size: 9pt;
   color: #555;
 }
+}
+
+@media print {
+  .video-envoltorio {
+    display: none;
+  }
+  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
+     dejar constancia de que existe, se puede sustituir por su imagen
+     de portada en lugar de ocultarlo.                                */
 }
