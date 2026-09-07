@@ -443,7 +443,6 @@ footer {
 
 /* ADAPTABILIDAD RESPONSIVE (MEDIA QUERIES) */
 
-/* Tablets y pantallas medianas (768px) */
 @media (min-width: 768px) {
     body {
         padding-top: 14rem;
@@ -489,7 +488,7 @@ footer {
         text-align: left;
     }
 }
-/* Pantallas escritorio (1024px) */
+
 @media (min-width: 1024px) {
     .targeta2 {
         grid-template-columns: repeat(4, 1fr);

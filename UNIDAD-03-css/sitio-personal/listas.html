@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dayanna sanchez" />
+    <meta name="author" content="Dayanna Sanchez" />
     <meta name="description" content="Guía de materiales, fases de producción y organización del taller Echoes of Time."/>
     <meta name="keywords" content="arte, ilustración, materiales, técnicas, acuarela, grafito, cronograma, Echoes of Time"/>
 
@@ -15,108 +15,110 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="contenedor">
-        <header id="inicio" class="portada-texto">
-            <div class="titulo-portada">
-                <h1>Horarios y Técnicas</h1>
-                <p>Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
-            </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="listas.html" class="menu-activo">Horarios y Técnicas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
+    <header id="cabecera" class="cabecera">
+        <div class="logo">
+            <h1 class="logo-texto">Horarios y Técnicas</h1>
+            <p class="portada-bajada">Un viaje ilustrado a través del tiempo, la memoria y las emociones.</p>
+        </div>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+                <li><a href="listas.html" class="menu-enlace activo">Horarios y Técnicas</a></li>
+                <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
+                <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        
+        <nav class="seccion seccion-indice" aria-label="Índice de la página">
+            <h2 class="seccion-titulo">En esta página</h2>
+            <ul class="lista-indice">
+                <li><a href="#materiales" class="pie-enlace">Materiales indispensables</a></li>
+                <li><a href="#pasos" class="pie-enlace">Proceso de preparación del papel</a></li>
+                <li><a href="#glosario" class="pie-enlace">Glosario de arte</a></li>
+                <li><a href="#colecciones" class="pie-enlace">Colecciones y técnicas</a></li>
+                <li><a href="#cronograma" class="pie-enlace">Cronograma de producción</a></li>
+            </ul>
+        </nav>
+
+        <article class="articulo-principal">
+            <h2 class="seccion-titulo">1. Guía de trabajo y organización del taller</h2>
+
+            <section id="materiales" class="seccion">
+                <h3 class="tarjeta-titulo">Materiales indispensables</h3>
+                <p class="seccion-texto">Para la elaboración de las obras en el taller se requiere:</p>
+                <ul class="lista-estilizada">
+                    <li>Papel de algodón de 300g/m² prensado en frío</li>
+                    <li>Lápices de grafito de graduaciones HB, 2B y 6B</li>
+                    <li>Tinta china negra y estilógrafos graduados</li>
+                    <li>Acuarelas de alta pigmentación y pinceles sintéticos</li>
+                    <li>Tableta gráfica y software de pintura digital</li>
                 </ul>
-            </nav>
-        </header>
+            </section>
 
-        <main id="contenido">
-            <div class="materiales">
-                <h2>En esta página</h2>
-                <ul>
-                    <li><a href="#materiales">Materiales indispensables</a></li>
-                    <li><a href="#pasos">Proceso de preparación del papel</a></li>
-                    <li><a href="#glosario">Glosario de arte</a></li>
-                    <li><a href="#colecciones">Colecciones y técnicas</a></li>
-                    <li><a href="#cronograma">Cronograma de producción</a></li>
+            <section id="pasos" class="seccion">
+                <h3 class="tarjeta-titulo">Proceso de preparación del papel</h3>
+                <p class="seccion-texto">El protocolo para acondicionar el soporte antes de pintar:</p>
+                <ol class="lista-ordenada">
+                    <li>Aclimatar el papel a la <code>humedad relativa</code> del ambiente durante 24 horas.</li>
+                    <li>Aparejar los bordes y fijar los bordes sobre la tabla de soporte con cinta de enmascarar.</li>
+                    <li>Aplicar una primera veladura de agua <code>para estirar las fibras</code>.</li>
+                    <li>Dejar secar en posición horizontal bajo prensa o peso uniforme.</li>
+                </ol>
+                <p class="seccion-texto">La preparación del papel es <strong>fundamental</strong> para garantizar la calidad de las obras finales.</p>
+            </section>
+
+            <section id="glosario" class="seccion">
+                <h3 class="tarjeta-titulo">Glosario de términos de arte</h3>
+                <dl class="glosario-lista">
+                    <dt class="glosario-termino">Lineart:</dt>
+                    <dd class="glosario-definicion">Dibujo de línea limpia que define los contornos antes de aplicar el <strong>color definitivo</strong>.</dd>
+
+                    <dt class="glosario-termino">Veladura:</dt>
+                    <dd class="glosario-definicion">Capa delgada y transparente de pintura que modifica el tono sin perder la <em>textura de fondo</em>.</dd>
+
+                    <dt class="glosario-termino">DPI:</dt>
+                    <dd class="glosario-definicion">Puntos por pulgada que determinan la <strong>resolución de impresión</strong> para conservar los detalles.</dd>
+
+                    <dt class="glosario-termino">Renderizado:</dt>
+                    <dd class="glosario-definicion">Proceso de aplicar luces, sombras y volúmenes finales a una <em>pieza digital</em>.</dd>
+                </dl>
+            </section>
+
+            <section id="colecciones" class="seccion">
+                <h3 class="tarjeta-titulo">Colecciones y técnicas</h3>
+                <ul class="lista-anidada">
+                    <li><strong>Técnicas Tradicionales</strong>
+                        <ul>
+                            <li>Estudios iniciales a lápiz de grafito</li>
+                            <li>Entintado tradicional con pluma y estilógrafo</li>
+                            <li>Acuarela sobre papel de algodón</li>
+                        </ul>
+                    </li>
+                    <li><strong>Técnicas digitales</strong>
+                        <ul>
+                            <li>Pintura digital con pinceles de textura</li>
+                            <li>Ajustes de iluminación atmosférica por capas</li>
+                            <li>Renderizado final en alta resolución (300 DPI)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ediciones Mixtas</strong>
+                        <ul>
+                            <li>Digitalización y limpieza de bocetos analógicos</li>
+                            <li>Colorización digital sobre trazo tradicional</li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
+            </section>
 
-            <article>
-                <h2>1. Guía de trabajo y organización del taller</h2>
-
-                <section id="materiales">
-                    <h3>Materiales indispensables</h3>
-                    <p>Para la elaboración de las obras en el taller se requiere:</p>
-                    <ul>
-                        <li>Papel de algodón de 300g/m² prensado en frío</li>
-                        <li>Lápices de grafito de graduaciones HB, 2B y 6B</li>
-                        <li>Tinta china negra y estilógrafos graduados</li>
-                        <li>Acuarelas de alta pigmentación y pinceles sintéticos</li>
-                        <li>Tableta gráfica y software de pintura digital</li>
-                    </ul>
-                </section>
-
-                <section id="pasos">
-                    <h3>Proceso de preparación del papel</h3>
-                    <p>El protocolo para acondicionar el soporte antes de pintar:</p>
-                    <ol type="1">
-                        <li>Aclimatar el papel a la <code>humedad relativa</code> del ambiente durante 24 horas.</li>
-                        <li>Aparejar los bordes y fijar los bordes sobre la tabla de soporte con cinta de enmascarar.</li>
-                        <li>Aplicar una primera veladura de agua <code>para estirar las fibras</code>.</li>
-                        <li>Dejar secar en posición horizontal bajo prensa o peso uniforme.</li>
-                    </ol>
-                    <p>La preparación del papel es <strong>fundamental</strong> para garantizar la calidad de las obras finales.</p>
-                </section>
-
-                <section id="glosario">
-                    <h3>Glosario de términos de arte</h3>
-                    <dl>
-                        <dt>Lineart:</dt>
-                        <dd>Dibujo de línea limpia que define los contornos antes de aplicar el <strong>color definitivo</strong>.</dd>
-
-                        <dt>Veladura:</dt>
-                        <dd>Capa delgada y transparente de pintura que modifica el tono sin perder la <em>textura de fondo</em>.</dd>
-
-                        <dt>DPI:</dt>
-                        <dd>Puntos por pulgada que determinan la <strong>resolución de impresión</strong> para conservar los detalles.</dd>
-
-                        <dt>Renderizado:</dt>
-                        <dd>Proceso de aplicar luces, sombras y volúmenes finales a una <em>pieza digital</em>.</dd>
-                    </dl>
-                </section>
-
-                <section id="colecciones">
-                    <h3>Colecciones y técnicas</h3>
-                    <ul>
-                        <li>Técnicas Tradicionales
-                            <ul>
-                                <li>Estudios iniciales a lápiz de grafito</li>
-                                <li>Entintado tradicional con pluma y estilógrafo</li>
-                                <li>Acuarela sobre papel de algodón</li>
-                            </ul>
-                        </li>
-                        <li>Técnicas digitales
-                            <ul>
-                                <li>Pintura digital con pinceles de textura</li>
-                                <li>Ajustes de iluminación atmosférica por capas</li>
-                                <li>Renderizado final en alta resolución (300 DPI)</li>
-                            </ul>
-                        </li>
-                        <li>Ediciones Mixtas
-                            <ul>
-                                <li>Digitalización y limpieza de bocetos analógicos</li>
-                                <li>Colorización digital sobre trazo tradicional</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="cronograma">
-                    <h3>Cronograma de producción</h3>
-                    <table border="1">
+            <section id="cronograma" class="seccion">
+                <h3 class="tarjeta-titulo">Cronograma de producción</h3>
+                <div class="contenedor-tabla">
+                    <table class="tabla-cronograma">
                         <caption><strong>Planificación de horas de taller y fases creativas para Echoes of Time</strong></caption>
                         <thead>
                             <tr>
@@ -128,62 +130,79 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td rowspan="2">Investigación y Bocetaje</td>
+                                <td rowspan="2" class="celda-destacada">Investigación y Bocetaje</td>
                                 <th scope="row">Lápiz de Grafito (HB/2B)</th>
                                 <td>8 horas</td>
-                                <td>Completado</td>
+                                <td><span class="etiqueta estado-completado">Completado</span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Estudios de Color Digital</th>
                                 <td>6 horas</td>
-                                <td>En proceso</td>
+                                <td><span class="etiqueta estado-proceso">En proceso</span></td>
                             </tr>
                             <tr>
-                                <td rowspan="3">Finalización y Acabado</td>
+                                <td rowspan="3" class="celda-destacada">Finalización y Acabado</td>
                                 <th scope="row">Tinta China y Pluma</th>
                                 <td>12 horas</td>
-                                <td>En proceso</td>
+                                <td><span class="etiqueta estado-proceso">En proceso</span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Veladuras de Acuarela</th>
                                 <td>10 horas</td>
-                                <td>Pendiente</td>
+                                <td><span class="etiqueta estado-pendiente">Pendiente</span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Renderizado Digital (300 DPI)</th>
                                 <td>14 horas</td>
-                                <td>Pendiente</td>
+                                <td><span class="etiqueta estado-pendiente">Pendiente</span></td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4"><em><strong>Nota:</strong> Total estimado de 50 horas de trabajo continuo por cada colección terminada.</em></td>
+                                <td colspan="4" class="tabla-pie-nota"><em><strong>Nota:</strong> Total estimado de 50 horas de trabajo continuo por cada colección terminada.</em></td>
                             </tr>
                         </tfoot>
                     </table>
+                </div>
 
-                    <p>Para consultar disponibilidad de talleres o encargar una pieza personalizada, visita nuestro <a href="contacto.html">formulario de contacto</a>.</p>
-                </section>
-            </article>
+                <p class="seccion-texto">Para consultar disponibilidad de talleres o encargar una pieza personalizada, visita nuestro <a href="contacto.html" class="pie-enlace">formulario de contacto</a>.</p>
+            </section>
+        </article>
 
-            <p><a href="#inicio">Volver al inicio de la página</a></p>
-        </main>
+        <p class="volver-inicio">
+            <a href="#cabecera" class="boton-subir">Volver al inicio de la página</a>
+        </p>
+    </main>
 
-        <footer>
-            <address>
-                <p><strong><em>Echoes of Time</em></strong></p>
-                <p>Teléfono: +506 1234 5678</p>
-                <p>email: <a href="mailto:contacto@EchoesofTime.com">contacto@EchoesofTime.com</a></p>
-            </address>
+    <footer id="pie" class="pie">
+        <div class="pie-columnas">
 
-            <p>
-                Sitio externo:
-                <a href="https://arteacr.com/" target="_blank" rel="noopener">arteacr.com</a>
-            </p>
+            <div class="pie-bloque">
+                <h2 class="pie-titulo">Echoes of Time</h2>
+                <p class="pie-texto">Un viaje ilustrado a través del tiempo.</p>
+            </div>
 
-            <p><small>&copy; 2025 Echoes of Time. <abbr title="Echoes of Time"><strong>Echoes of Time</strong></abbr> Todos los derechos reservados.</small></p>
-            <p><small>@DayannaSanchez</small></p>
-        </footer>
-    </div>
+            <div class="pie-bloque">
+                <h2 class="pie-titulo">Contacto</h2>
+                <address class="pie-datos">
+                    Teléfono: +506 1234 5678<br>
+                    Email: <a href="mailto:contacto@EchoesofTime.com" class="pie-enlace">contacto@EchoesofTime.com</a>
+                </address>
+            </div>
+
+            <div class="pie-bloque">
+                <h2 class="pie-titulo">Sitio externo</h2>
+                <p class="pie-texto">
+                    Visita: <a href="https://arteacr.com/" target="_blank" rel="noopener" class="pie-enlace">arteacr.com</a>
+                </p>
+            </div>
+
+        </div>
+
+        <p class="pie-creditos">
+            <small>&copy; 2026 Echoes of Time. Todos los derechos reservados. | @DayannaSanchez</small>
+        </p>
+    </footer>
+
 </body>
 </html>
