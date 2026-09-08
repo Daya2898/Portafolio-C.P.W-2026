@@ -127,7 +127,7 @@ aside {
 }
 
 
-/*CABECERA Y NAVEGACIÓN ADAPTABLE */
+/*CABECERA Y NAVEGACIÓN*/
 
 header {
   position: fixed;
@@ -165,8 +165,8 @@ header {
   margin-bottom: 0;
   text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.6);
 }
-
-/* Control del Menú Hamburguesa / Mobile First */
+/*menu hamburgueza*/
+/* Control / Mobile First */
 .menu-control {
   position: absolute;
   opacity: 0;
@@ -201,7 +201,6 @@ nav ul,
   width: 100%;
   gap: 1rem;
 }
-
 /* Apertura de menú mediante checkbox */
 .menu-control:checked ~ .menu,
 .menu-control:checked ~ nav ul {
@@ -233,7 +232,6 @@ nav a:hover,
   color: var(--color-marca);
   border-bottom: 0.2rem solid var(--color-marca);
 }
-
 
 /*  ELEMENTOS DE CONTENIDO (LISTAS, CITAS, TABLAS) */
 
@@ -280,7 +278,7 @@ article p::first-letter {
   color: var(--color-alerta);
 }
 
-/* Tablas Adaptables */
+/* Tablas */
 .contenedor-tabla,
 .tabla-envoltorio {
   overflow-x: auto; /* Evita que la tabla rompa el ancho en pantallas móviles */
@@ -328,7 +326,7 @@ tfoot td {
 }
 
 
-/*  GALERÍA Y TARJETAS (FLEXBOX & CSS GRID) */
+/*  GALERÍA Y TARJETAS (FLEXBOX - CSS GRID) */
 
 figure {
   border: 0.1rem solid var(--color-marca);
@@ -484,7 +482,7 @@ button:active,
 }
 
 
-/* PIE DE PÁGINA (FOOTER)= */
+/* PIE DE PÁGINA (FOOTER) */
 
 footer {
   width: 100%;
