@@ -1,4 +1,5 @@
-/*  VARIABLES CSS (:root)*/
+/*  VARIABLES CSS (:root)CONFIGURACIÓN*/
+
 :root {
   /* Colores Principales */
   --color-marca:       #f4680b;
@@ -17,7 +18,7 @@
   --fuente-principal: "Poppins", Arial, Helvetica, sans-serif;
   --fuente-serif:     'Times New Roman', Times, serif;
 
-  /* Estilos y Bordes */
+  /* Estilos, Bordes y Sombras */
   --radio-sm: 0.6rem;
   --radio-md: 0.8rem;
   --radio-lg: 1.2rem;
@@ -25,33 +26,37 @@
   --sombra-sm: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.06);
   --sombra-md: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.10);
   --sombra-lg: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.12);
+  --ancho-max: 120rem; /* 1200px */
 }
 
-/* RESET BÁSICO Y CONFIGURACIÓN GENERAL */
+
+/* RESET BÁSICO Y BASE TIPOGRÁFICA */
+
+/* Técnica del 62.5%: 1rem = 10px para facilitar el cálculo tipográfico */
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; 
   scroll-behavior: smooth;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Garantiza dimensiones exactas incluyendo border y padding */
 }
 
 body {
-  font-size: 1.6rem; /* 16px */
+  font-size: 1.6rem; /* Restablece el texto legible a 16px */
   line-height: 1.6;
   font-family: var(--fuente-principal);
   color: var(--color-texto);
   background-color: var(--color-fondo);
-  padding-top: 22rem; /* Espacio para cabecera fija en móviles */
+  padding-top: 18rem; /* Espacio de reserva para cabecera fija */
 }
 
-img {
+img, picture, video {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: block; /* Elimina espacio residual bajo imágenes */
 }
 
 a {
@@ -65,7 +70,7 @@ a {
   color: var(--color-blanco);
 }
 
-/*  TIPOGRAFÍA Y ENCABEZADOS*/
+/* Tipografía y Jerarquía */
 h1, h2, h3 {
   font-family: var(--fuente-principal);
   line-height: 1.2;
@@ -73,149 +78,28 @@ h1, h2, h3 {
 }
 
 h1 { 
-  font-size: 3.6rem;
+  font-size: 3.2rem; /* Tamaño optimizado para móvil */
   color: var(--color-marca);
   font-family: var(--fuente-serif);
 }
 
-h2 { font-size: 2.8rem; margin-bottom: 1.2rem; }
-h3 { font-size: 2.0rem; margin-bottom: 1rem; }
+h2 { font-size: 2.4rem; margin-bottom: 1.2rem; }
+h3 { font-size: 1.8rem; margin-bottom: 1.0rem; }
 
 p {
   margin-bottom: 1.6rem;
 }
 
+
+/* ESTRUCTURA DE CONTENIDO Y SECCIONES */
+
 .contenedor {
   width: 100%;
-  max-width: 1200px;      
-  margin: 0 auto;       
-  padding-left: 2rem;    
-  padding-right: 2rem;  
-  box-sizing: border-box; 
+  max-width: var(--ancho-max);      
+  margin: 0 auto; 
+  padding: 0 1.6rem;    
 }
 
-main p {
-  max-width: 100%; /* Permite adaptarse correctamente a la cuadrícula */
-}
-
-blockquote {
-  font-style: italic;
-  color: var(--color-texto);
-  border-left: 0.4rem solid var(--color-marca);
-  padding-left: 1.2rem;
-  margin: 2rem 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 1.2rem 1.6rem;
-  border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
-}
-
-.cita-autor {
-  font-style: normal;
-  font-size: 1.4rem;
-  margin-top: 0.8rem;
-  color: var(--color-acento-alt);
-}
-
-article p::first-letter {
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: var(--color-alerta);
-}
-
-/* CABECERA Y NAVEGACIÓN*/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background-color: var(--color-acento);
-  background-image: url('../recursos/fondo1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: var(--sombra-md);
-}
-
-.cabecera {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.titulo-portada {
-  text-align: center;
-}
-
-.titulo-portada p {
-  font-size: 1.4rem;
-  color: var(--color-blanco);
-  font-weight: 400;
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.6);
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  color: var(--color-blanco);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.4rem;
-  letter-spacing: 0.2rem;
-  padding: 0.5rem 1rem;
-  transition: color var(--transicion), background-color var(--transicion);
-  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
-}
-
-nav a:hover {
-  color: var(--color-blanco);
-  background-color: var(--color-acento-alt);
-  border-radius: var(--radio-sm);
-}
-
-.menu-activo {
-  color: var(--color-marca);
-  border-bottom: 0.2rem solid var(--color-marca);
-}
-
-.menu-anclas {
-  background-color: var(--color-blanco);
-  padding: 1.6rem;
-  font-weight: 600;
-  border-radius: var(--radio-sm);
-  margin-bottom: 2.4rem;
-  border: 0.1rem solid var(--color-acento);
-  box-shadow: var(--sombra-sm);
-}
-
-.menu-anclas h2 {
-  font-size: 2rem;
-}
-
-/*  ESTRUCTURA DE CONTENIDO Y SECCIONES */
 section {
   margin-bottom: 3.2rem;
 }
@@ -242,13 +126,117 @@ aside {
   gap: 2.4rem;
 }
 
-.pie-contenido {
-  margin-top: 1.6rem;
-  text-align: right;
-  font-weight: bold;
+
+/*CABECERA Y NAVEGACIÓN ADAPTABLE */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--color-acento);
+  background-image: url('../recursos/fondo1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: var(--sombra-md);
 }
 
-/* LISTAS Y TABLAS */
+.cabecera {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.titulo-portada {
+  text-align: center;
+}
+
+.titulo-portada p {
+  font-size: 1.4rem;
+  color: var(--color-blanco);
+  font-weight: 400;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.6);
+}
+
+/* Control del Menú Hamburguesa / Mobile First */
+.menu-control {
+  position: absolute;
+  opacity: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+}
+
+.btn-hamburguesa,
+.menu-boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.menu-barra {
+  display: block;
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: var(--color-blanco);
+  border-radius: 0.2rem;
+}
+
+nav ul,
+.menu {
+  list-style: none;
+  display: none; /* Oculto en móvil por defecto */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* Apertura de menú mediante checkbox */
+.menu-control:checked ~ .menu,
+.menu-control:checked ~ nav ul {
+  display: flex;
+}
+
+nav a,
+.menu-enlace {
+  display: block;
+  color: var(--color-blanco);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem 1.6rem;
+  transition: color var(--transicion), background-color var(--transicion);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+nav a:hover,
+.menu-enlace:hover {
+  color: var(--color-blanco);
+  background-color: var(--color-acento-alt);
+  border-radius: var(--radio-sm);
+}
+
+.menu-activo {
+  color: var(--color-marca);
+  border-bottom: 0.2rem solid var(--color-marca);
+}
+
+
+/*  ELEMENTOS DE CONTENIDO (LISTAS, CITAS, TABLAS) */
+
 main ul, 
 main ol {
   padding-left: 2.4rem;
@@ -269,20 +257,45 @@ main li {
   margin-bottom: 0.8rem;
 }
 
-.contenedor-tabla {
-  overflow-x: auto;
+blockquote {
+  font-style: italic;
+  color: var(--color-texto);
+  border-left: 0.4rem solid var(--color-marca);
+  padding: 1.2rem 1.6rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
+}
+
+.cita-autor {
+  font-style: normal;
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+  color: var(--color-acento-alt);
+}
+
+article p::first-letter {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--color-alerta);
+}
+
+/* Tablas Adaptables */
+.contenedor-tabla,
+.tabla-envoltorio {
+  overflow-x: auto; /* Evita que la tabla rompa el ancho en pantallas móviles */
   margin-bottom: 2.4rem;
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: collapse; /* Fusiona los bordes dobles de las celdas */
   width: 100%;
 }
 
 caption {
   padding: 0.8rem;
   font-weight: 700;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 th, td {
@@ -314,7 +327,9 @@ tfoot td {
   border-top: 0.2rem solid var(--color-marca);
 }
 
-/* FIGURAS Y ELEMENTOS DE GALERÍA*/
+
+/*  GALERÍA Y TARJETAS (FLEXBOX & CSS GRID) */
+
 figure {
   border: 0.1rem solid var(--color-marca);
   border-radius: var(--radio-sm);
@@ -350,11 +365,11 @@ figure {
 }
 
 .tarjeta {
-  flex: 1 1 28rem;
+  flex: 1 1 28rem; /* Ajuste fluido: crece, se reduce y parte de 280px */
   min-width: 25rem;
   background-color: var(--color-blanco);
   border: 0.1rem solid var(--color-acento);
-  border-radius: 1rem;
+  border-radius: var(--radio-md);
   padding: 1.8rem;
   text-decoration: none;
   color: var(--color-texto);
@@ -366,12 +381,11 @@ figure {
   box-shadow: var(--sombra-md);
 }
 
-/* Galería Grid */
+/* Galería CSS Grid */
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 32rem));
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); /* Responsivo sin media queries */
   justify-content: center;
-  justify-items: center;
   gap: 2.5rem;
   margin: 2rem auto 3.2rem auto;
   width: 100%;
@@ -404,17 +418,9 @@ figure {
   margin-bottom: 1.6rem;
 }
 
-.destacado-grid {
-  grid-column: span 1;
-}
 
-.targeta2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
+/*  FORMULARIOS Y BOTONES */
 
-/* FORMULARIOS Y BOTONES*/
 fieldset {
   padding: 1.6rem;
   margin-bottom: 1.6rem;
@@ -438,13 +444,15 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border: 0.2rem solid #beb50e;
+  border: 0.2rem solid var(--color-marca);
   outline: none;
-  background-color: #e28b34bb;
+  background-color: rgba(244, 104, 11, 0.05);
   transition: border-color var(--transicion), background-color var(--transicion);
 }
 
-button {
+button,
+.boton {
+  display: inline-block;
   background-color: var(--color-acento);
   color: var(--color-texto);
   padding: 0.8rem 1.6rem;
@@ -458,34 +466,37 @@ button {
   transition: background-color var(--transicion), transform 0.15s ease;
 }
 
-button:hover {
+button:hover,
+.boton:hover {
   background-color: var(--color-acento-alt);
   color: var(--color-blanco);
 }
 
-button:focus {
-  outline: 0.3rem solid #9d00fe;
+button:focus,
+.boton:focus {
+  outline: 0.3rem solid var(--color-marca);
   outline-offset: 0.2rem;
 }
 
-button:active {
+button:active,
+.boton:active {
   transform: scale(0.97);
 }
 
-/* PIE DE PÁGINA (FOOTER)*/
+
+/* PIE DE PÁGINA (FOOTER)= */
+
 footer {
   width: 100%;
   background-color: #d1a054; 
   color: #2b2b2b;
-  box-sizing: border-box;
   margin-top: 4rem;
 }
 
 .pie-pagina {
-  max-width: 1200px;
+  max-width: var(--ancho-max);
   margin: 0 auto;
   padding: 3rem 2rem;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -497,115 +508,80 @@ address {
   font-style: normal;
 }
 
-/*MEDIA QUERIES RESPONSIVE (min-width: 768px - TABLET) */
-@media (min-width: 768px) {
-  body {
-    padding-top: 15rem; /* Ajuste para evitar solapamiento con cabecera fija */
-  }
 
-  /* Escala Tipográfica */
+/* PUNTOS DE QUIEBRE (MEDIA QUERIES - MOBILE FIRST) */
+
+/* Tabla Compacta para móviles muy pequeños */
+@media (max-width: 768px) {
+  .tabla th,
+  .tabla td {
+    padding: 0.6rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* VISTA TABLETA (A partir de 768px) */
+@media (min-width: 768px) {
   h1 { font-size: 4.0rem; }
   h2 { font-size: 2.8rem; }
-  h3 { font-size: 1.9rem; }
+  h3 { font-size: 2.0rem; }
 
-  header {
-    padding: 0; 
+  body {
+    padding-top: 14rem; /* Ajuste de cabecera en pantallas medianas */
   }
+
+  .btn-hamburguesa,
+  .menu-boton {
+    display: none; /* Oculta botón de menú en tablets/escritorio */
+  }
+
+  nav ul,
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    width: auto;
+  }
+
+  nav a,
+  .menu-enlace {
+    padding: 0.5rem 1rem;
+  }
+
+  main p {
+    max-width: 65ch; /* Ancho máximo óptimo de lectura */
+  }
+}
+
+/* VISTA ESCRITORIO (A partir de 1024px) */
+@media (min-width: 1024px) {
+  h1 { font-size: 4.8rem; }
+  h2 { font-size: 3.2rem; }
 
   .cabecera {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem; 
   }
 
-  .titulo-portada {
-    text-align: left;
-  }
-
-  .contenedor {
-    padding-left: 4rem;  
-    padding-right: 4rem; 
-  }
-
-  /* Navegación */
-  nav, .menu {
-    flex-direction: row;
-    gap: 1.6rem;
-    width: auto;
-  }
-
-  nav ul {
-    flex-direction: row;
-    gap: 1.6rem;
-  }
-
-  nav a {
-    display: inline-block;
-    border-bottom: none;
-    border-radius: var(--radio-sm);
-  }
-
-  /* Layouts */
   .layout-principal {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-  }
-
-  .index-main {
-    display: grid;
-    grid-template-areas:
-      "cabecera cabecera"
-      "contenido lateral"
-      "pie       pie";
-    grid-template-columns: 3fr 1fr;
-    gap: 2.5rem;
-  }
-
-  .index-main .menu-anclas { grid-area: cabecera; }
-  .index-main article     { grid-area: contenido; }
-  .index-main aside       { grid-area: lateral; }
-  .index-main .pie-contenido { grid-area: pie; }
-
-  .destacado-grid {
-    grid-column: span 2;
-  }
-
-  /* Footer */
-  .pie-pagina {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    padding: 3rem 4rem;
-  }
-  
-  .copyright {
-    text-align: right;
+    grid-template-columns: 2fr 1fr;
+    gap: 3.2rem;
   }
 }
 
-/*  MEDIA QUERIES RESPONSIVE (min-width: 1024px - ESCRITORIO)*/
-@media (min-width: 1024px) {
-  body {
-    padding-top: 13rem;
-  }
 
-  h1 { font-size: 4.8rem; }
-  h2 { font-size: 3.2rem; }
-  h3 { font-size: 2.0rem; }
+/* ACCESIBILIDAD DEL MOVIMIENTO */
 
-  .targeta2 {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-  }
-}
-
-/* AJUSTES MÓVILES (max-width: 767px)*/
-@media (max-width: 767px) {
-  table th,
-  table td {
-    padding: 0.6rem;
-    font-size: 1.4rem;
+/* Desactiva animaciones y efectos para usuarios con preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
