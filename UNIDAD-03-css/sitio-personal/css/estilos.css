@@ -201,7 +201,37 @@ nav ul,
   width: 100%;
   gap: 1rem;
 }
+/* Apertura de menú mediante checkbox */
+.menu-control:checked ~ .menu,
+.menu-control:checked ~ nav ul {
+  display: flex;
+}
 
+nav a,
+.menu-enlace {
+  display: block;
+  color: var(--color-blanco);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem 1.6rem;
+  transition: color var(--transicion), background-color var(--transicion);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+nav a:hover,
+.menu-enlace:hover {
+  color: var(--color-blanco);
+  background-color: var(--color-acento-alt);
+  border-radius: var(--radio-sm);
+}
+
+.menu-activo {
+  color: var(--color-marca);
+  border-bottom: 0.2rem solid var(--color-marca);
+}
 
 /*  ELEMENTOS DE CONTENIDO (LISTAS, CITAS, TABLAS) */
 
@@ -248,7 +278,7 @@ article p::first-letter {
   color: var(--color-alerta);
 }
 
-/* Tablas Adaptables */
+/* Tablas */
 .contenedor-tabla,
 .tabla-envoltorio {
   overflow-x: auto; /* Evita que la tabla rompa el ancho en pantallas móviles */
@@ -296,7 +326,7 @@ tfoot td {
 }
 
 
-/*  GALERÍA Y TARJETAS (FLEXBOX & CSS GRID) */
+/*  GALERÍA Y TARJETAS (FLEXBOX - CSS GRID) */
 
 figure {
   border: 0.1rem solid var(--color-marca);
@@ -452,7 +482,7 @@ button:active,
 }
 
 
-/* PIE DE PÁGINA (FOOTER)= */
+/* PIE DE PÁGINA (FOOTER) */
 
 footer {
   width: 100%;
@@ -488,7 +518,7 @@ address {
   }
 }
 
-/* VISTA TABLETA (A partir de 768px) */
+/* VISTA TABLETA (de 768px) */
 @media (min-width: 768px) {
   h1 { font-size: 4.0rem; }
   h2 { font-size: 2.8rem; }
@@ -522,7 +552,7 @@ address {
   }
 }
 
-/* VISTA ESCRITORIO (A partir de 1024px) */
+/* VISTA ESCRITORIO (partir  1024px) */
 @media (min-width: 1024px) {
   h1 { font-size: 4.8rem; }
   h2 { font-size: 3.2rem; }
