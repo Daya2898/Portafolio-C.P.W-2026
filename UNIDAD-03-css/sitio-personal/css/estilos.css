@@ -127,7 +127,7 @@ aside {
 }
 
 
-/*CABECERA Y NAVEGACIÓN ADAPTABLE */
+/*CABECERA Y NAVEGACIÓN*/
 
 header {
   position: fixed;
@@ -165,8 +165,8 @@ header {
   margin-bottom: 0;
   text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.6);
 }
-
-/* Control del Menú Hamburguesa / Mobile First */
+/*menu hamburgueza*/
+/* Control / Mobile First */
 .menu-control {
   position: absolute;
   opacity: 0;
@@ -200,38 +200,6 @@ nav ul,
   align-items: center;
   width: 100%;
   gap: 1rem;
-}
-
-/* Apertura de menú mediante checkbox */
-.menu-control:checked ~ .menu,
-.menu-control:checked ~ nav ul {
-  display: flex;
-}
-
-nav a,
-.menu-enlace {
-  display: block;
-  color: var(--color-blanco);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.4rem;
-  letter-spacing: 0.2rem;
-  padding: 0.8rem 1.6rem;
-  transition: color var(--transicion), background-color var(--transicion);
-  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
-  text-align: center;
-}
-
-nav a:hover,
-.menu-enlace:hover {
-  color: var(--color-blanco);
-  background-color: var(--color-acento-alt);
-  border-radius: var(--radio-sm);
-}
-
-.menu-activo {
-  color: var(--color-marca);
-  border-bottom: 0.2rem solid var(--color-marca);
 }
 
 
