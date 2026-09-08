@@ -45,6 +45,7 @@ html {
 }
 
 body {
+  width: 100%;
   font-size: 1.6rem; /* Restablece el texto legible a 16px */
   line-height: 1.6;
   font-family: var(--fuente-principal);
@@ -62,42 +63,33 @@ img, picture, video {
 a {
   color: var(--color-marca);
   text-decoration: none;
-  transition: color var(--transicion);
-}
-
-::selection {
-  background-color: var(--color-exito);
-  color: var(--color-blanco);
 }
 
 /* Tipografía y Jerarquía */
 h1, h2, h3 {
   font-family: var(--fuente-principal);
   line-height: 1.2;
-  color: var(--color-titulos);
+  color: var(--color-marca);
 }
 
 h1 { 
   font-size: 3.2rem; /* Tamaño optimizado para móvil */
-  color: var(--color-marca);
-  font-family: var(--fuente-serif);
 }
 
-h2 { font-size: 2.4rem; margin-bottom: 1.2rem; }
-h3 { font-size: 1.8rem; margin-bottom: 1.0rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2.0rem; }
 
 p {
-  margin-bottom: 1.6rem;
+  margin-bottom: var(--radio-sm);
 }
 
 
 /* ESTRUCTURA DE CONTENIDO Y SECCIONES */
 
 .contenedor {
-  width: 100%;
   max-width: var(--ancho-max);      
   margin: 0 auto; 
-  padding: 0 1.6rem;    
+  padding: 0 1.6rem;  
 }
 
 section {
@@ -119,7 +111,6 @@ aside {
   border-left: 0.4rem solid var(--color-acento);
 }
 
-.layout-principal,
 .index-main {
   display: flex;
   flex-direction: column;
@@ -129,7 +120,7 @@ aside {
 
 /*CABECERA Y NAVEGACIÓN*/
 
-header {
+#inicio {
   position: fixed;
   top: 0;
   left: 0;
