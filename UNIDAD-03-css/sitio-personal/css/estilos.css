@@ -518,7 +518,7 @@ address {
   }
 }
 
-/* VISTA TABLETA (de 768px) */
+/* VISTA TABLETA (A partir de 768px) */
 @media (min-width: 768px) {
   h1 { font-size: 4.0rem; }
   h2 { font-size: 2.8rem; }
@@ -552,7 +552,7 @@ address {
   }
 }
 
-/* VISTA ESCRITORIO (partir  1024px) */
+/* VISTA ESCRITORIO (A partir de 1024px) */
 @media (min-width: 1024px) {
   h1 { font-size: 4.8rem; }
   h2 { font-size: 3.2rem; }
