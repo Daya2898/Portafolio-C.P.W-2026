@@ -865,6 +865,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  width: 28rem;
   height: 100vh;
   background-color: var(--color-blanco);
   box-shadow: var(--sombra-3);
@@ -884,15 +885,30 @@ img {
   transform: translateX(0);
   /*Vuelve a su posición entra deslizadose desde la izquierda*/
 }
-/*La capa oscura de fondo*/
-.panel-control:checked ~ .panel-lateral::before {
+
+/*.panel-control:checked ~ .panel-lateral::before {
   content: '';
   position: fixed;
   top: 0;
   left: 28rem;
   right: 0;
   background-color: rgba(0, 0, 0, 0.45);
-  z-index: -1;/*oscurece el resto de la página  mientras el panel esta abierto*/
+  z-index: -1;/*oscurece el resto de la página  mientras el panel esta abierto
+}*/
+/*La capa oscura de fondo*/
+.panel-fondo {
+  position: fixed;
+  inset:0;/*Indica que top, bottom, right y left en 0. cubre pantalla completa*/
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index:150;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.panel-control:checked ~ .panel-fondo {
+  opacity: 1;
+  visibility: visible;
+  cursor:pointer;
 }
 /*El boton y cierre*/
 .panel-boton, 
@@ -2366,6 +2382,31 @@ tope para pantalla grande*/
     grid-template-columns: 2fr 3fr;
     grid-template-areas: 'imagen texto';
   } /*la imagen cambia de lado, sin encoger o bajar*/
+}
+/*OFF canvas solo para pantallas pequeñas*/
+@media(min-width:1024px) {
+  .panel-boton,
+  .panel-cerrar {
+    display: none;
+  }
+  .panel-fondo {
+    display: none;
+
+  }
+  .panel-lateral {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+    padding-left: 5rem;
+    z-index:auto
+  }
+  #mosaico {
+    display: grid;
+    grid-template-columns: 24rem 1fr;
+    gap: var(--esp-lg);
+    align-items: center;
+  }
 }
 
 /*LAS CONSULTAS DISPONIBLES
